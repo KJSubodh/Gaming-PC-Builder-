@@ -1,70 +1,37 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Gaming-PC-Builder
+Hey Guys! A newbie here, trying to learn web development.
 
-## Available Scripts
+Overview
+This is an e-commerce app made using React, HTML, and CSS ONLY (no backend yet). You can use this app to choose different parts to build your gaming PC and get the total cost in INR (Indian Rupees).
 
-In the project directory, you can run:
+Features
+Build your own gaming PC by selecting various parts.
+Buy individual gaming PC parts like GPU, CPU, Motherboard, etc.
+Purchase pre-built gaming PCs.
+Buy gaming accessories such as Mic, Earphones, Mice, Webcam, and Monitor.
+Dummy payment options (non-functional).
+Printable invoice/bill.
+Disclaimer
+This project is an attempt to understand and learn web development better. Initially, I intended to implement the backend to make it a full MERN stack application, but due to time constraints, it’s front-end only.
 
-### `npm start`
+Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Clone the repository: git clone https://github.com/KJSubodh/Gaming-PC-Builder-.git
+cd Gaming-PC-Builder-
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Install dependencies: 
+npm install
 
-### `npm test`
+Install Babel and other dev dependencies: 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+npm install --save-dev @babel/core @babel/cli @babel/preset-env @babel/preset-react
+npm install --save-dev webpack webpack-cli webpack-dev-server babel-loader
 
-### `npm run build`
+Install React and React DOM:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+npm install react react-dom
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Start the development server:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+npm start
