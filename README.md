@@ -24,7 +24,9 @@ This project is an attempt to understand and learn web development better. Initi
 
 Installation
 
-Clone the repository: git clone https://github.com/KJSubodh/Gaming-PC-Builder-.git
+Clone the repository: 
+git clone https://github.com/KJSubodh/Gaming-PC-Builder-.git
+
 cd Gaming-PC-Builder-
 
 Install dependencies: 
@@ -33,6 +35,7 @@ npm install
 Install Babel and other dev dependencies: 
 
 npm install --save-dev @babel/core @babel/cli @babel/preset-env @babel/preset-react
+
 npm install --save-dev webpack webpack-cli webpack-dev-server babel-loader
 
 Install React and React DOM:
