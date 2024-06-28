@@ -5,7 +5,7 @@ Hey Guys! A newbie here, trying to learn web development.
 
 Overview
 
-This is an e-commerce app made using React, HTML, and CSS ONLY (no backend yet). You can use this app to choose different parts to build your gaming PC and get the total cost in INR (Indian Rupees).
+This is an e-commerce app made using React, HTML, and CSS ONLY (no backend yet). You can use this app to choose different parts to build your gaming PC and get the total cost in an invoice in INR (Indian Rupees).
 
 
 Features
