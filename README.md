@@ -1,18 +1,25 @@
 
 Gaming-PC-Builder
+
 Hey Guys! A newbie here, trying to learn web development.
 
 Overview
+
 This is an e-commerce app made using React, HTML, and CSS ONLY (no backend yet). You can use this app to choose different parts to build your gaming PC and get the total cost in INR (Indian Rupees).
 
+
 Features
+
 Build your own gaming PC by selecting various parts.
 Buy individual gaming PC parts like GPU, CPU, Motherboard, etc.
 Purchase pre-built gaming PCs.
 Buy gaming accessories such as Mic, Earphones, Mice, Webcam, and Monitor.
 Dummy payment options (non-functional).
 Printable invoice/bill.
+
+
 Disclaimer
+
 This project is an attempt to understand and learn web development better. Initially, I intended to implement the backend to make it a full MERN stack application, but due to time constraints, it’s front-end only.
 
 Installation
