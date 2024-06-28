@@ -45,3 +45,18 @@ npm install react react-dom
 Start the development server:
 
 npm start
+
+
+Some Screenshots of the webapp
+
+![Screenshot (81)](https://github.com/KJSubodh/Gaming-PC-Builder-/assets/56197566/aaaa18f0-6766-43db-9327-90c221c43a9a)
+![Screenshot (80)](https://github.com/KJSubodh/Gaming-PC-Builder-/assets/56197566/4ed85aef-4368-45f1-810a-0b9fdbef2ac5)
+![Screenshot (78)](https://github.com/KJSubodh/Gaming-PC-Builder-/assets/56197566/92407166-3608-4737-be63-5e9c7976241b)
+![Screenshot (74)](https://github.com/KJSubodh/Gaming-PC-Builder-/assets/56197566/9089c547-0fca-42e8-bfe3-7e58d1339eda)
+![Screenshot (73)](https://github.com/KJSubodh/Gaming-PC-Builder-/assets/56197566/a1c715f3-0031-4b48-b522-3b7c64689758)
+![Screenshot (72)](https://github.com/KJSubodh/Gaming-PC-Builder-/assets/56197566/1eba1e9a-967d-4889-a8c2-f5b534975740)
+![Screenshot (71)](https://github.com/KJSubodh/Gaming-PC-Builder-/assets/56197566/589be264-0b00-44c5-ab65-896804457240)
+![Screenshot (70)](https://github.com/KJSubodh/Gaming-PC-Builder-/assets/56197566/5e4cb8f8-2142-4cba-beb7-a463cae7e9c9)
+![Screenshot (69)](https://github.com/KJSubodh/Gaming-PC-Builder-/assets/56197566/41810322-bb87-420e-96dc-e90e485b22a7)
+
+
