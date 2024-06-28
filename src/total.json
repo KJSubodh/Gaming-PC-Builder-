@@ -1,0 +1,320 @@
+[
+    {
+        "PC_Type": "High-End Gaming PC",
+        "Price": 66709.0
+    },
+    {
+        "PC_Type": "Enthusiast Gaming PC",
+        "Price": 62665.0
+    },
+    {
+        "PC_Type": "High-Performance Gaming PC",
+        "Price": 0
+    },
+    {
+        "PC_Type": "Mid-Range Gaming PC",
+        "Price": 33498.0
+    },
+    {
+        "PC_Type": "Budget Gaming PC",
+        "Price": 25007.0
+    },
+    {
+        "PC_Type": "Content Creation & Gaming PC",
+        "Price": 42000.0
+    },
+    {
+        "PC_Type": "Compact Gaming PC",
+        "Price": 16747.0
+    },
+    {
+        "PC_Type": "Streaming & Gaming PC",
+        "Price": 0
+    },
+    {
+        "PC_Type": "VR-Ready Gaming PC",
+        "Price": 41710.0
+    },
+    {
+        "PC_Type": "Entry-Level Gaming PC",
+        "Price": 16747.0
+    },
+    {
+        "PC_Type": "Budget Gaming & Streaming PC",
+        "Price": 20842.0
+    },
+    {
+        "PC_Type": "Compact Content Creation PC",
+        "Price": 45872.0
+    },
+    {
+        "PC_Type": "Mini ITX Gaming PC",
+        "Price": 16747.0
+    },
+    {
+        "PC_Type": "Workstation & Gaming PC",
+        "Price": 500447.0
+    },
+    {
+        "PC_Type": "Multi-Display Gaming PC",
+        "Price": 41710.0
+    },
+    {
+        "PC_Type": "Home Theater PC",
+        "Price": 20842.0
+    },
+    {
+        "PC_Type": "Streaming & Editing PC",
+        "Price": 66709.0
+    },
+    {
+        "PC_Type": "All-Rounder Gaming PC",
+        "Price": 0
+    },
+    {
+        "PC_Type": "Ultra-Compact Gaming PC",
+        "Price": 12505.0
+    },
+    {
+        "PC_Type": "Entry-Level Productivity PC",
+        "Price": 10040.0
+    },
+    {
+        "Primary_Storage": [
+            {
+                "Name": "Samsung 980 Pro 1TB",
+                "Capacity": "1TB",
+                "Read Speed": "Up to 7,000 MB/s",
+                "Write Speed": "Up to 5,000 MB/s",
+                "Price (USD)": "$130+",
+                "Price (INR)": "\u00e2\u201a\u00b910845.21+"
+            },
+            {
+                "Name": "WD Black SN850X 500GB",
+                "Capacity": "500GB",
+                "Read Speed": "Up to 7,300 MB/s",
+                "Write Speed": "Up to 6,400 MB/s",
+                "Price (USD)": "$100+",
+                "Price (INR)": "\u00e2\u201a\u00b98349.15+"
+            },
+            {
+                "Name": "Crucial P5 Plus 2TB",
+                "Capacity": "2TB",
+                "Read Speed": "Up to 6,600 MB/s",
+                "Write Speed": "Up to 4,400 MB/s",
+                "Price (USD)": "$250+",
+                "Price (INR)": "\u00e2\u201a\u00b920872.92+"
+            },
+            {
+                "Name": "Gigabyte Aorus Gen4 7000 1TB",
+                "Capacity": "1TB",
+                "Read Speed": "Up to 5,500 MB/s",
+                "Write Speed": "Up to 4,400 MB/s",
+                "Price (USD)": "$150+",
+                "Price (INR)": "\u00e2\u201a\u00b912535.38+"
+            },
+            {
+                "Name": "Kingston KC3000 500GB",
+                "Capacity": "500GB",
+                "Read Speed": "Up to 7,000 MB/s",
+                "Write Speed": "Up to 7,000 MB/s",
+                "Price (USD)": "$120+",
+                "Price (INR)": "\u00e2\u201a\u00b910022.46+"
+            },
+            {
+                "Name": "Samsung 980 Pro 1TB",
+                "Capacity": "1TB",
+                "Read Speed": "Up to 7,000 MB/s",
+                "Write Speed": "Up to 5,000 MB/s",
+                "Price (USD)": "$130+",
+                "Price (INR)": "\u00e2\u201a\u00b910845.21+"
+            },
+            {
+                "Name": "Crucial P5 Plus 2TB",
+                "Capacity": "2TB",
+                "Read Speed": "Up to 6,600 MB/s",
+                "Write Speed": "Up to 4,400 MB/s",
+                "Price (USD)": "$250+",
+                "Price (INR)": "\u00e2\u201a\u00b920872.92+"
+            },
+            {
+                "Name": "Kingston KC3000 500GB",
+                "Capacity": "500GB",
+                "Read Speed": "Up to 7,000 MB/s",
+                "Write Speed": "Up to 7,000 MB/s",
+                "Price (USD)": "$120+",
+                "Price (INR)": "\u00e2\u201a\u00b910022.46+"
+            },
+            {
+                "Name": "WD Black SN850X 500GB",
+                "Capacity": "500GB",
+                "Read Speed": "Up to 7,300 MB/s",
+                "Write Speed": "Up to 6,400 MB/s",
+                "Price (USD)": "$100+",
+                "Price (INR)": "\u00e2\u201a\u00b98349.15+"
+            },
+            {
+                "Name": "Samsung 980 Pro 1TB",
+                "Capacity": "1TB",
+                "Read Speed": "Up to 7,000 MB/s",
+                "Write Speed": "Up to 5,000 MB/s",
+                "Price (USD)": "$130+",
+                "Price (INR)": "\u00e2\u201a\u00b910845.21+"
+            },
+            {
+                "Name": "Crucial P5 Plus 2TB",
+                "Capacity": "2TB",
+                "Read Speed": "Up to 6,600 MB/s",
+                "Write Speed": "Up to 4,400 MB/s",
+                "Price (USD)": "$250+",
+                "Price (INR)": "\u00e2\u201a\u00b920872.92+"
+            },
+            {
+                "Name": "Samsung 980 Pro 1TB",
+                "Capacity": "1TB",
+                "Read Speed": "Up to 7,000 MB/s",
+                "Write Speed": "Up to 5,000 MB/s",
+                "Price (USD)": "$130+",
+                "Price (INR)": "\u00e2\u201a\u00b910845.21+"
+            },
+            {
+                "Name": "Crucial P5 Plus 2TB",
+                "Capacity": "2TB",
+                "Read Speed": "Up to 6,600 MB/s",
+                "Write Speed": "Up to 4,400 MB/s",
+                "Price (USD)": "$250+",
+                "Price (INR)": "\u00e2\u201a\u00b920872.92+"
+            },
+            {
+                "Name": "Crucial P5 Plus 2TB",
+                "Capacity": "2TB",
+                "Read Speed": "Up to 6,600 MB/s",
+                "Write Speed": "Up to 4,400 MB/s",
+                "Price (USD)": "$250+",
+                "Price (INR)": "\u00e2\u201a\u00b920872.92+"
+            }
+        ],
+        "Secondary_Storage": [
+            {
+                "Name": "Samsung 870 QVO 1TB",
+                "Capacity": "1TB",
+                "Read Speed": "Up to 560 MB/s",
+                "Write Speed": "Up to 530 MB/s",
+                "Price (USD)": "$100+",
+                "Price (INR)": "\u00e2\u201a\u00b98349.15+"
+            },
+            {
+                "Name": "Crucial MX500 500GB",
+                "Capacity": "500GB",
+                "Read Speed": "Up to 560 MB/s",
+                "Write Speed": "Up to 510 MB/s",
+                "Price (USD)": "$70+",
+                "Price (INR)": "\u00e2\u201a\u00b95844.94+"
+            },
+            {
+                "Name": "Kingston A400 240GB",
+                "Capacity": "240GB",
+                "Read Speed": "Up to 500 MB/s",
+                "Write Speed": "Up to 450 MB/s",
+                "Price (USD)": "$40+",
+                "Price (INR)": "\u00e2\u201a\u00b93339.66+"
+            },
+            {
+                "Name": "ADATA Ultimate SU800 500GB",
+                "Capacity": "500GB",
+                "Read Speed": "Up to 550 MB/s",
+                "Write Speed": "Up to 520 MB/s",
+                "Price (USD)": "$60+",
+                "Price (INR)": "\u00e2\u201a\u00b95008.49+"
+            },
+            {
+                "Name": "Crucial MX500 500GB",
+                "Capacity": "500GB",
+                "Read Speed": "Up to 560 MB/s",
+                "Write Speed": "Up to 510 MB/s",
+                "Price (USD)": "$70+",
+                "Price (INR)": "\u00e2\u201a\u00b95844.94+"
+            },
+            {
+                "Name": "Kingston A400 240GB",
+                "Capacity": "240GB",
+                "Read Speed": "Up to 500 MB/s",
+                "Write Speed": "Up to 450 MB/s",
+                "Price (USD)": "$40+",
+                "Price (INR)": "\u00e2\u201a\u00b93339.66+"
+            },
+            {
+                "Name": "ADATA Ultimate SU800 500GB",
+                "Capacity": "500GB",
+                "Read Speed": "Up to 550 MB/s",
+                "Write Speed": "Up to 520 MB/s",
+                "Price (USD)": "$60+",
+                "Price (INR)": "\u00e2\u201a\u00b95008.49+"
+            },
+            {
+                "Name": "Crucial MX500 500GB",
+                "Capacity": "500GB",
+                "Read Speed": "Up to 560 MB/s",
+                "Write Speed": "Up to 510 MB/s",
+                "Price (USD)": "$70+",
+                "Price (INR)": "\u00e2\u201a\u00b95844.94+"
+            },
+            {
+                "Name": "Kingston A400 240GB",
+                "Capacity": "240GB",
+                "Read Speed": "Up to 500 MB/s",
+                "Write Speed": "Up to 450 MB/s",
+                "Price (USD)": "$40+",
+                "Price (INR)": "\u00e2\u201a\u00b93339.66+"
+            },
+            {
+                "Name": "Kingston A400 240GB",
+                "Capacity": "240GB",
+                "Read Speed": "Up to 500 MB/s",
+                "Write Speed": "Up to 450 MB/s",
+                "Price (USD)": "$40+",
+                "Price (INR)": "\u00e2\u201a\u00b93339.66+"
+            },
+            {
+                "Name": "ADATA Ultimate SU800 500GB",
+                "Capacity": "500GB",
+                "Read Speed": "Up to 550 MB/s",
+                "Write Speed": "Up to 520 MB/s",
+                "Price (USD)": "$60+",
+                "Price (INR)": "\u00e2\u201a\u00b95008.49+"
+            },
+            {
+                "Name": "Kingston A400 240GB",
+                "Capacity": "240GB",
+                "Read Speed": "Up to 500 MB/s",
+                "Write Speed": "Up to 450 MB/s",
+                "Price (USD)": "$40+",
+                "Price (INR)": "\u00e2\u201a\u00b93339.66+"
+            },
+            {
+                "Name": "Kingston A400 240GB",
+                "Capacity": "240GB",
+                "Read Speed": "Up to 500 MB/s",
+                "Write Speed": "Up to 450 MB/s",
+                "Price (USD)": "$40+",
+                "Price (INR)": "\u00e2\u201a\u00b93339.66+"
+            },
+            {
+                "Name": "Kingston A400 240GB",
+                "Capacity": "240GB",
+                "Read Speed": "Up to 500 MB/s",
+                "Write Speed": "Up to 450 MB/s",
+                "Price (USD)": "$40+",
+                "Price (INR)": "\u00e2\u201a\u00b93339.66+"
+            },
+            {
+                "Name": "ADATA Ultimate SU800 500GB",
+                "Capacity": "500GB",
+                "Read Speed": "Up to 550 MB/s",
+                "Write Speed": "Up to 520 MB/s",
+                "Price (USD)": "$60+",
+                "Price (INR)": "\u00e2\u201a\u00b95008.49+"
+            }
+        ]
+    }
+]

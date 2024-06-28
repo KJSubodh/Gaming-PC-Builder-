@@ -1,0 +1,135 @@
+[
+    {
+        "name": "Redragon K552 Kumara RGB Mechanical Gaming Keyboard",
+        "RGB": "YES",
+        "type": "Mechanical",
+        "USB": "Wired USB",
+        "price": "₹3499"
+    },
+    {
+        "name": "Cosmic Byte Black Widow Mechanical Keyboard",
+        "RGB": "NO",
+        "type": "Mechanical",
+        "USB": "Wired USB",
+        "price": "₹2199"
+    },
+    {
+        "name": "Zebronics Zeb-Transformer Mechanical Keyboard",
+        "RGB": "YES",
+        "type": "Mechanical",
+        "USB": "Wired USB",
+        "price": "₹2499"
+    },
+    {
+        "name": "Ant Esports MK1000 Wired Mechanical Keyboard",
+        "RGB": "YES",
+        "type": "Mechanical",
+        "USB": "Wired USB",
+        "price": "₹4299"
+    },
+    {
+        "name": "Ajazz AK33 K Pre-Built Mechanical Keyboard",
+        "RGB": "YES",
+        "type": "Mechanical",
+        "USB": "Wired USB",
+        "price": "₹4999"
+    },
+    {
+        "name": "HyperX Alloy Origins Core Tenkeyless Mechanical Gaming Keyboard",
+        "RGB": "YES",
+        "type": "Mechanical",
+        "USB": "Wired USB",
+        "price": "₹6299"
+    },
+    {
+        "name": "SteelSeries Apex 3 TKL Tenkeyless Mechanical Gaming Keyboard",
+        "RGB": "YES",
+        "type": "Mechanical",
+        "USB": "Wired USB",
+        "price": "₹7499"
+    },
+    {
+        "name": "Cooler Master CK550 V2 Tenkeyless Gaming Mechanical Keyboard",
+        "RGB": "YES",
+        "type": "Mechanical",
+        "USB": "Wired USB",
+        "price": "₹8999"
+    },
+    {
+        "name": "Razer BlackWidow V3 Mini HyperSpeed Wireless Mechanical Gaming Keyboard",
+        "RGB": "YES",
+        "type": "Mechanical",
+        "USB": "Wireless (USB-A dongle)",
+        "price": "₹10499"
+    },
+    {
+        "name": "Logitech G915 TKL LIGHTSPEED Wireless Mechanical Gaming Keyboard",
+        "RGB": "YES",
+        "type": "Mechanical",
+        "USB": "Wireless (USB-A dongle)",
+        "price": "₹13499"
+    },
+    {
+        "name": "Redgear Blaze RGB Gaming Keyboard",
+        "RGB": "YES",
+        "type": "Membrane",
+        "USB": "Wired USB",
+        "price": "₹1299"
+    },
+    {
+        "name": "HP Omen Encoder Wired Gaming Keyboard",
+        "RGB": "NO",
+        "type": "Membrane",
+        "USB": "Wired USB",
+        "price": "₹1499"
+    },
+    {
+        "name": "Gigabyte K7 Mechanical Keyboard",
+        "RGB": "NO",
+        "type": "Membrane",
+        "USB": "Wired USB",
+        "price": "₹1799"
+    },
+    {
+        "name": "Cougar Aurora RGB Membrane Gaming Keyboard",
+        "RGB": "YES",
+        "type": "Membrane",
+        "USB": "Wired USB",
+        "price": "₹1999"
+    },
+    {
+        "name": "Zebronics Zeb-Transformer Plus Multimedia Keyboard",
+        "RGB": "NO",
+        "type": "Membrane",
+        "USB": "Wired USB",
+        "price": "₹3499"
+    },
+    {
+        "name": "Razer Huntsman V2 Analog Gaming Keyboard",
+        "RGB": "YES",
+        "type": "Mechanical",
+        "USB": "Wired USB",
+        "price": "₹18499"
+    },
+    {
+        "name": "Logitech G915 TKL LIGHTSPEED Wireless Mechanical Gaming Keyboard",
+        "RGB": "YES",
+        "type": "Mechanical",
+        "USB": "Wireless (USB-A dongle)",
+        "price": "₹13499"
+    },
+    {
+        "name": "SteelSeries Apex Pro TKL Tenkeyless Mechanical Gaming Keyboard",
+        "RGB": "YES",
+        "type": "Mechanical",
+        "USB": "Wired USB",
+        "price": "₹15999"
+    },
+    {
+        "name": "Redragon K617 Fizz Wired RGB Gaming Keyboard",
+        "RGB": "YES",
+        "type": "Mechanical",
+        "USB": "Wired USB",
+        "price": "₹5499"
+    }
+]

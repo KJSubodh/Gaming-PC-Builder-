@@ -1,0 +1,14 @@
+{
+  "imports": {
+    "cpu": "./cpu.json",
+    "gpu": "./gpu.json",
+    "motherboard": "./mb.json",
+    "ram": "./ram.json",
+    "psu": "./psu.json",
+    "storage": "./storage.json",
+    "case": "./cases.json",
+    "cooling": "./cooling.json"
+  }
+}
+
+

@@ -1,0 +1,172 @@
+{
+  "gaming_cpus": [
+    {
+      "name": "AMD Ryzen 9 7950X",
+      "cores_threads": "16C/32T",
+      "clock_speed": "4.5-5.7 GHz",
+      "price": "66709",
+      "description": "Powerful option for future-proofing and multitasking.",
+      "urls": [
+        "https://www.amd.com/content/dam/amd/en/images/products/processors/ryzen/2505503-ryzen-9-7900x.jpg",
+        "https://cdn.mos.cms.futurecdn.net/WzuALAMWiCQ9DRN4MHey94.jpg"
+      ]
+    },    
+    {
+      "name": "Intel Core i9-13900K",
+      "cores_threads": "8P16E/32T",
+      "clock_speed": "5.5-5.8 GHz",
+      "price": "62665 ",
+      "description": "Excellent all-around performance with high core count.",
+      "urls": [
+        "https://m.media-amazon.com/images/I/71ARN1Ls82L.jpg",
+        "https://m.media-amazon.com/images/I/61My4F2-XUL._AC_UF1000,1000_QL80_.jpg"
+      ]
+    },
+    {
+      "name": "AMD Ryzen 7 7800X3D",
+      "cores_threads": "8C/16T",
+      "clock_speed": "4.3-5.0 GHz",
+      "price": "37575 ",
+      "description": "Champion for gaming due to large L3 cache.",
+      "urls": [
+        "https://www.amd.com/content/dam/amd/en/images/products/processors/ryzen/2505503-ryzen-7-7800x3d.jpg",
+        "https://cdn.arstechnica.net/wp-content/uploads/2023/04/IMG_0971-800x533.jpeg"
+      ]
+    },
+    {
+      "name": "Intel Core i7-13700K",
+      "cores_threads": "8P8E/24T",
+      "clock_speed": "5.2-5.5 GHz",
+      "price": "45872 ",
+      "description": "Strong balance of cores and performance for demanding titles.",
+      "urls": [
+        "https://m.media-amazon.com/images/I/71yv+mqFUdL.jpg",
+        "https://cdn.mos.cms.futurecdn.net/vbWDMDAGjUAb9Vp53QN9x8.jpg"
+      ]
+    },
+    {
+      "name": "AMD Ryzen 7 7700",
+      "cores_threads": "8C/16T",
+      "clock_speed": "4.1-5.3 GHz",
+      "price": "33498 ",
+      "description": "Great value for high refresh rate gaming.",
+      "urls": [
+        "https://www.deltapage.com/web/image/product.template/7570/image_1024?unique=dc97ee0",
+        "https://www.amd.com/content/dam/amd/en/images/products/processors/ryzen/2505503-ryzen-7-7700.jpg"
+      ]
+    },
+    {
+      "name": "Intel Core i5-13600K",
+      "cores_threads": "6P8E/20T",
+      "clock_speed": "5.1-5.4 GHz",
+      "price": "29225 ",
+      "description": "Budget-friendly option for high frame rates.",
+      "urls": [
+        "https://m.media-amazon.com/images/I/715zYXNxrqL._AC_UF1000,1000_QL80_.jpg",
+        "https://www.club386.com/wp-content/uploads/2022/09/13th-Gen-Core-1nVYvUvYfmVtN6H.jpg"
+      ]
+    },
+    {
+      "name": "AMD Ryzen 5 7600X",
+      "cores_threads": "6C/12T",
+      "clock_speed": "4.4-5.1 GHz",
+      "price": "25007 ",
+      "description": "Ideal for 1080p and 1440p gaming with strong single-core performance.",
+      "urls": [
+        "https://www.amd.com/system/files/styles/992px/private/2022-11/1761310-amd-ryzen-5-7000-series-PIB-angle-1260x709.png?itok=NbR-797T",
+        "https://cdn.mos.cms.futurecdn.net/U6sXkBUXihGtntANFNtRzR.jpg"
+      ]
+    },
+    {
+      "name": "Intel Core i5-13400",
+      "cores_threads": "6P4E/16T",
+      "clock_speed": "4.0-4.6 GHz",
+      "price": "20842 ",
+      "description": "Excellent value for balanced 1080p performance."
+    },
+    {
+      "name": "AMD Ryzen 5 5600X",
+      "cores_threads": "6C/12T",
+      "clock_speed": "3.7-4.6 GHz",
+      "price": "16747 ",
+      "description": "Reliable option for established AM4 platform."
+    },
+    {
+      "name": "Intel Core i5-11400",
+      "cores_threads": "6C/12T",
+      "clock_speed": "2.6-4.4 GHz",
+      "price": "16747 ",
+      "description": "Budget-friendly pick for 1080p esports titles."
+    },
+    {
+      "name": "AMD Ryzen 3 3300X",
+      "cores_threads": "4C/8T",
+      "clock_speed": "3.8-4.3 GHz",
+      "price": "12505 ",
+      "description": "Capable entry-level CPU for older games and esports."
+    },
+    {
+      "name": "Intel Core i3-12100F",
+      "cores_threads": "4C/8T",
+      "clock_speed": "3.3-4.3 GHz",
+      "price": "10040 ",
+      "description": "Budget-conscious option for basic 1080p gaming."
+    },
+    {
+      "name": "AMD Ryzen 7 5800X3D",
+      "cores_threads": "8C/16T",
+      "clock_speed": "3.4-4.5 GHz",
+      "price": "33498 ",
+      "description": "Excellent alternative for high frame rate gaming on AM4 platform."
+    },
+    {
+      "name": "Intel Core i5-12600K",
+      "cores_threads": "6P4E/16T",
+      "clock_speed": "4.5-5.1 GHz",
+      "price": "25007 ",
+      "description": "Still a strong contender for mid-range gaming builds."
+    },
+    {
+      "name": "AMD Ryzen 5 5600G",
+      "cores_threads": "6C/12T",
+      "clock_speed": "3.9-4.6 GHz",
+      "price": "20842 ",
+      "description": "Integrated graphics make it a good choice for budget builds without a dedicated GPU."
+    },
+    {
+      "name": "AMD Ryzen 9 5900X",
+      "cores_threads": "12C/24T",
+      "clock_speed": "3.7-4.8 GHz",
+      "price": "42000",
+      "description": "Successor to the 7700 with potentially higher core count and performance."
+    },
+    {
+      "name": "Intel Core i7 12700K",
+      "cores_threads": "12C/20T",
+      "clock_speed": "3.6-5.0 GHz",
+      "price": "33,500",
+      "description": "Next-gen Core i5 with potential for improved clock speeds and performance."
+    },
+    {
+      "name": "AMD Ryzen Threadripper 5995WX",
+      "cores_threads": "16C/32T",
+      "clock_speed": "3.9-4.9 GHz",
+      "price": "500447 ",
+      "description": "This CPU caters to enthusiasts and professionals who need exceptional multi-core performance for demanding tasks like video editing, 3D rendering, and high-end gaming with heavy streaming/recording."
+    },
+    {
+      "name": "Intel Core i9-12900K",
+      "cores_threads": "8P8E/24T",
+      "clock_speed": "5.2-5.5 GHz",
+      "price": "41710 ",
+      "description": "This CPU offers a strong balance of cores and performance, making it ideal for gamers who also edit videos, stream, or work with creative applications."
+    },
+    {
+      "name": "AMD Ryzen 5 5500",
+      "cores_threads": "6C/12T",
+      "clock_speed": "3.6-4.6 GHz",
+      "price": "12505 ",
+      "description": "This CPU is a good choice for budget-minded gamers who plan to upgrade their graphics card later. The AM4 platform allows for future upgrades to higher-end Ryzen processors on the same motherboard (depending on compatibility)."
+    }
+  ]
+}

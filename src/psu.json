@@ -1,0 +1,93 @@
+[
+  {
+    "name": "Seasonic Prime PX-1000",
+    "wattage": 1000,
+    "voltage": "80 Platinum Efficiency",
+    "pricing": "$250",
+    "pricing (INR)": "₹20872.92",
+    "urls": [
+      "https://seasonic.com/wp-content/uploads/2024/03/PRIME-PX-1000-box-1462x1080.webp",
+      "https://globaliraq.net/cdn/shop/files/7_ff8915f1-5f7a-4d7c-921d-7407a7ddb12b_2048x2048.jpg?v=1701800353"
+    ]
+  },
+    {
+      "name": "Corsair RM850x",
+      "wattage": 850,
+      "voltage": "80 Gold Efficiency",
+      "pricing": "$200",
+      "pricing (INR)": "₹16698.61",
+      "urls": [
+      "https://assets.corsair.com/image/upload/c_pad,q_auto,h_1024,w_1024,f_auto/products/Power-Supply-Units/CP-9020180-NA/Gallery/RM850x_PSU_01.webp?width=1080&quality=85&auto=webp&format=pjpg",
+      "https://cdn.mos.cms.futurecdn.net/cvq5P4KJ75Fj2Hs5AyRs9P-1200-80.jpg"
+    ]
+    },
+    {
+      "name": "EVGA SuperNOVA G3 1000W",
+      "wattage": 1000,
+      "voltage": "80 Gold Efficiency",
+      "pricing": "$180",
+      "pricing (INR)": "₹15028.75",
+      "urls": [
+        "https://images.evga.com/products/gallery/png/220-G3-1000-X1_LG_1.png",
+        "https://images.evga.com/products/gallery/png/220-G3-1000-X1_XL_4.png"
+      ]
+    },
+    {
+      "name": "Fractal Design Ion Platinum 760W",
+      "wattage": 760,
+      "voltage": "80 Platinum Efficiency",
+      "pricing": "$150",
+      "pricing (INR)": "₹12535.38",
+      "urls": [
+        "https://www.fractal-design.com/app/uploads/2021/07/Ion-2-Platinum-760W-Box.jpg",
+        "https://media.karousell.com/media/photos/products/2022/12/25/fractal_design_ion_760p_platin_1671960841_7533192e_progressive.jpg"
+      ]
+    },
+    {
+      "name": "be quiet! Pure Power 11 CM 650W",
+      "wattage": 650,
+      "voltage": "80 Gold Efficiency",
+      "pricing": "$120",
+      "pricing (INR)": "₹10022.46",
+      "urls": [
+        "https://www.bequiet.com/admin/ImageServer.php?ID=dca42a37886@be-quiet.net&omitPreview=true&.jpg",
+        "https://www.guru3d.com/data/publish/220/c7c103a53dcd84c3465e08a8ec86ddaddee7ab/img_2306.jpg"
+      ]
+    },
+    {
+      "name": "MSI MPG A-GF Titanium 750W",
+      "wattage": 750,
+      "voltage": "80 Titanium Efficiency",
+      "pricing": "$180",
+      "pricing (INR)": "₹15028.75"
+    },
+    {
+      "name": "Thermaltake Smart 550W",
+      "wattage": 550,
+      "voltage": "80 Bronze Efficiency",
+      "pricing": "$80",
+      "pricing (INR)": "₹6679.32"
+    },
+    {
+      "name": "Seasonic S12III 550W",
+      "wattage": 550,
+      "voltage": "80 Bronze Efficiency",
+      "pricing": "$70",
+      "pricing (INR)": "₹5844.94"
+    },
+    {
+      "name": "Corsair CX550M",
+      "wattage": 550,
+      "voltage": "80 Bronze Efficiency",
+      "pricing": "$60",
+      "pricing (INR)": "₹5008.49"
+    },
+    {
+      "name": "SilverStone SX650G",
+      "wattage": 650,
+      "voltage": "80 Gold Efficiency",
+      "pricing": "$130",
+      "pricing (INR)": "₹10845.21"
+    }
+  ]
+  

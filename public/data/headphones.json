@@ -1,0 +1,154 @@
+{
+  "GamingHeadphones/Earphones": [
+    {
+      "name": "Razer BlackShark V2 Pro Wireless Gaming Headset",
+      "wireless": "YES",
+      "mic": "YES",
+      "rgb": "YES",
+      "price": "₹12,499",
+      "connectivity": "Wireless"
+    },
+    {
+      "name": "Logitech G PRO X Wireless Gaming Headset",
+      "wireless": "YES",
+      "mic": "YES",
+      "rgb": "YES",
+      "price": "₹13,499",
+      "connectivity": "Wireless"
+    },
+    {
+      "name": "Sony PlayStation 5 Pulse 3D Wireless Headset",
+      "wireless": "YES",
+      "mic": "YES",
+      "rgb": "NO",
+      "price": "₹8,299",
+      "connectivity": "Wireless"
+    },
+    {
+      "name": "HyperX Cloud Flight Wireless Gaming Headset",
+      "wireless": "YES",
+      "mic": "YES",
+      "rgb": "NO",
+      "price": "₹6,999",
+      "connectivity": "Wireless"
+    },
+    {
+      "name": "Cosmic Byte G4000 Over Ear Wired Gaming Headphones with Mic",
+      "wireless": "NO",
+      "mic": "YES",
+      "rgb": "YES",
+      "price": "₹1,799",
+      "connectivity": "Wired"
+    },
+    {
+      "name": "Redgear Cosmo 7.1 USB Wired Gaming Headset",
+      "wireless": "NO",
+      "mic": "YES",
+      "rgb": "YES",
+      "price": "₹2,249",
+      "connectivity": "Wired"
+    },
+    {
+      "name": "SteelSeries Arctis 1 Wired Gaming Headset",
+      "wireless": "NO",
+      "mic": "YES",
+      "rgb": "NO",
+      "price": "₹2,999",
+      "connectivity": "Wired"
+    },
+    {
+      "name": "HyperX Cloud Stinger Core Wired Gaming Headset",
+      "wireless": "NO",
+      "mic": "YES",
+      "rgb": "NO",
+      "price": "₹1,599",
+      "connectivity": "Wired"
+    },
+    {
+      "name": "Audio-Technica ATH-M50x Professional Monitor Headphones",
+      "wireless": "NO",
+      "mic": "YES (Detachable)",
+      "rgb": "NO",
+      "price": "₹8,999",
+      "connectivity": "Wired"
+    },
+    {
+      "name": "Sennheiser HD 569 Closed Back Headphones",
+      "wireless": "NO",
+      "mic": "YES (Detachable)",
+      "rgb": "NO",
+      "price": "₹4,999",
+      "connectivity": "Wired"
+    },
+    {
+      "name": "boAt Immortal 1000D Wireless Bluetooth Gaming Earphones",
+      "wireless": "YES",
+      "mic": "YES",
+      "price": "₹1,799",
+      "connectivity": "Wireless"
+    },
+    {
+      "name": "JBL Quantum TWS True Wireless Gaming Earbuds",
+      "wireless": "YES",
+      "mic": "YES",
+      "price": "₹6,499",
+      "connectivity": "Wireless"
+    },
+    {
+      "name": "Razer Hammerhead Pro V2 Wired In-Ear Gaming Earphones",
+      "wireless": "NO",
+      "mic": "YES",
+      "price": "₹1,249",
+      "connectivity": "Wired"
+    },
+    {
+      "name": "Cosmic Byte Meteor Wired Gaming Earphones with Mic",
+      "wireless": "NO",
+      "mic": "YES",
+      "price": "₹499",
+      "connectivity": "Wired"
+    },
+    {
+      "name": "Redgear Agartha Wired Gaming Earphones with Mic",
+      "wireless": "NO",
+      "mic": "YES",
+      "price": "₹649",
+      "connectivity": "Wired"
+    },
+    {
+      "name": "Samsung Galaxy Buds2 Pro True Wireless Earphones",
+      "wireless": "YES",
+      "mic": "YES",
+      "price": "₹17,999",
+      "connectivity": "Wireless"
+    },
+    {
+      "name": "Sony WF-C500 True Wireless Earphones",
+      "wireless": "YES",
+      "mic": "YES",
+      "price": "₹5,999",
+      "connectivity": "Wireless"
+    },
+    {
+      "name": "AGARO GAMING Blaz Pro TWS Earphones",
+      "wireless": "YES",
+      "mic": "YES",
+      "price": "₹2,499",
+      "connectivity": "Wireless"
+    },
+    {
+      "name": "boAt Airdopes 141 True Wireless Earphones",
+      "wireless": "YES",
+      "mic": "YES",
+      "price": "₹1,299",
+      "connectivity": "Wireless"
+    },
+    {
+      "name": "Zebronics Zeb-Sound Bomb Bass Wireless Earphones",
+      "wireless": "YES",
+      "mic": "YES",
+      "price": "₹899",
+      "connectivity": "Wireless"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+    "Gaming PC Cases": {
+      "High-End Cases": [
+        {
+          "Name": "NZXT H710i",
+          "Price": "16674 INR+",
+          "Specs": "(ATX, Tempered Glass)"
+        },
+        {
+          "Name": "Lian Li O11 Dynamic XL",
+          "Price": "20842.5 INR+",
+          "Specs": "(ATX, Tempered Glass)"
+        },
+        {
+          "Name": "Corsair iCUE 500X RGB",
+          "Price": "18347.14 INR+",
+          "Specs": "(ATX, Tempered Glass)"
+        }
+      ],
+      "Mid-Range Cases": [
+        {
+          "Name": "Fractal Design Meshify C ATX",
+          "Price": "12505.55 INR+",
+          "Specs": "(ATX, Tempered Glass)"
+        },
+        {
+          "Name": "Phanteks Eclipse P400A",
+          "Price": "10033.96 INR+",
+          "Specs": "(ATX, Tempered Glass)"
+        },
+        {
+          "Name": "NZXT H510 Flow",
+          "Price": "8346.85 INR+",
+          "Specs": "(ATX, Tempered Glass)"
+        },
+        {
+          "Name": "Be Quiet! Pure Base 500DX",
+          "Price": "10857.23 INR+",
+          "Specs": "(ATX, Tempered Glass)"
+        }
+      ],
+      "Compact & Mini-ITX Cases": [
+        {
+          "Name": "Cooler Master NR200P",
+          "Price": "6670.96 INR+",
+          "Specs": "(Mini-ITX, Tempered Glass)"
+        },
+        {
+          "Name": "Lian Li Q500",
+          "Price": "15007.2 INR+",
+          "Specs": "(ATX, Tempered Glass)"
+        },
+        {
+          "Name": "NZXT H1",
+          "Price": "12505.55 INR+",
+          "Specs": "(Mini-ITX, Vertical Design)"
+        }
+      ],
+      "Airflow-Focused Cases": [
+        {
+          "Name": "Lian Li Lancool II Mesh Performance",
+          "Price": "8346.85 INR+",
+          "Specs": "(ATX, Mesh Front Panel)"
+        },
+        {
+          "Name": "Fractal Design Define 7 Compact",
+          "Price": "15007.2 INR+",
+          "Specs": "(ATX, Sound Dampening)"
+        },
+        {
+          "Name": "be quiet! Pure Base 500 FX",
+          "Price": "11675.98 INR+",
+          "Specs": "(ATX, Mesh Front Panel)"
+        }
+      ],
+      "Aesthetics-Focused Cases": [
+        {
+          "Name": "Corsair Crystal Series 680X RGB",
+          "Price": "25005.11 INR+",
+          "Specs": "(ATX, Tempered Glass)"
+        },
+        {
+          "Name": "Thermaltake Level 20 VT",
+          "Price": "16674 INR+",
+          "Specs": "(ATX, Tempered Glass)"
+        }
+      ]
+    }
+  }
+
+
+  

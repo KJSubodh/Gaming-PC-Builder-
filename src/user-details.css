@@ -1,0 +1,197 @@
+.user-details {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background: #f7f9fc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.user-details h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.user-details input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.user-details input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+}
+
+.user-details input[type="text"]::placeholder {
+  color: #aaa;
+}
+
+.user-details input[type="text"] + input[type="text"] {
+  margin-top: 20px;
+}
+
+.user-details input[type="text"]:last-of-type {
+  margin-bottom: 20px;
+}
+
+.cpu-select-container {
+  display: flex;
+  align-items: center;
+}
+
+.cpu-image {
+  max-width: 200px;
+  max-height: 200px; /* Adjust the maximum width of the image */
+  margin-left: 20px; /* Adjust the spacing between the select option and the image */
+}
+
+.gpu-select-container {
+  display: flex;
+  align-items: center;
+}
+
+.gpu-image {
+  max-width: 300px; /* Adjust the maximum width of the image */
+  max-height: 300px; /* Adjust the maximum height of the image */
+  margin-left: 20px; /* Adjust the spacing between the select option and the image */
+}
+
+.motherboard-select-container {
+  display: flex;
+  align-items: center;
+}
+
+.motherboard-image {
+  max-width: 300px; /* Adjust the maximum width of the image */
+  max-height: 300px; /* Adjust the maximum height of the image */
+  margin-left: 20px; /* Adjust the spacing between the select option and the image */
+}
+
+.ram-select-container {
+  display: flex;
+  align-items: center;
+}
+
+.ram-image {
+  max-width: 300px; /* Adjust the maximum width of the image */
+  max-height: 300px; /* Adjust the maximum height of the image */
+  margin-left: 20px; /* Adjust the spacing between the select option and the image */
+}
+
+.case-select-container {
+  display: flex;
+  align-items: center;
+}
+
+.case-image {
+  max-width: 300px; /* Adjust the maximum width of the image */
+  max-height: 300px; /* Adjust the maximum height of the image */
+  margin-left: 20px; /* Adjust the spacing between the select option and the image */
+}
+
+.cooling-select-container {
+  display: flex;
+  align-items: center;
+}
+
+.cooling-image {
+  max-width: 300px; /* Adjust the maximum width of the image */
+  max-height: 300px; /* Adjust the maximum height of the image */
+  margin-left: 20px; /* Adjust the spacing between the select option and the image */
+}
+
+.storage-select-container {
+  display: flex;
+  align-items: center;
+}
+
+.storage-image {
+  max-width: 300px; /* Adjust the maximum width of the image */
+  max-height: 300px; /* Adjust the maximum height of the image */
+  margin-left: 20px; /* Adjust the spacing between the select option and the image */
+}
+.psu-select-container {
+  display: flex;
+  align-items: center;
+}
+
+.psu-image {
+  max-width: 300px; /* Adjust the maximum width of the image */
+  max-height: 300px; /* Adjust the maximum height of the image */
+  margin-left: 20px; /* Adjust the spacing between the select option and the image */
+}
+
+.mouse-select-container {
+  display: flex;
+  align-items: center;
+}
+
+.mouse-image {
+  max-width: 300px; /* Adjust the maximum width of the image */
+  max-height: 300px; /* Adjust the maximum height of the image */
+  margin-left: 20px; /* Adjust the spacing between the select option and the image */
+}
+
+.keyboard-select-container {
+  display: flex;
+  align-items: center;
+}
+
+.keyboard-image {
+  max-width: 300px; /* Adjust the maximum width of the image */
+  max-height: 300px; /* Adjust the maximum height of the image */
+  margin-left: 20px; /* Adjust the spacing between the select option and the image */
+}
+
+.monitor-select-container {
+  display: flex;
+  align-items: center;
+}
+
+.monitor-image {
+  max-width: 300px; /* Adjust the maximum width of the image */
+  max-height: 300px; /* Adjust the maximum height of the image */
+  margin-left: 20px; /* Adjust the spacing between the select option and the image */
+}
+
+.webcam-select-container {
+  display: flex;
+  align-items: center;
+}
+
+.webcam-image {
+  max-width: 300px; /* Adjust the maximum width of the image */
+  max-height: 300px; /* Adjust the maximum height of the image */
+  margin-left: 20px; /* Adjust the spacing between the select option and the image */
+}
+
+.headphones-select-container {
+  display: flex;
+  align-items: center;
+}
+
+.headphones-image {
+  max-width: 300px; /* Adjust the maximum width of the image */
+  max-height: 300px; /* Adjust the maximum height of the image */
+  margin-left: 20px; /* Adjust the spacing between the select option and the image */
+}
+
+.microphone-select-container {
+  display: flex;
+  align-items: center;
+}
+
+.microphone-image {
+  max-width: 300px; /* Adjust the maximum width of the image */
+  max-height: 300px; /* Adjust the maximum height of the image */
+  margin-left: 20px; /* Adjust the spacing between the select option and the image */
+}

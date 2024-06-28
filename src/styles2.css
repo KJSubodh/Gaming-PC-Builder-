@@ -1,0 +1,98 @@
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.prebuilt-pc-container {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 650px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease;
+  font-family: Roboto, sans-serif;
+}
+
+.prebuilt-pc-heading {
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(1, 1, 1, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.prebuilt-pc-description-container {
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.prebuilt-pc-description {
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: black;
+}
+
+.prebuilt-pc-item {
+  margin: 0 auto 20px; /* Center horizontally and add bottom margin */
+  width: 500px;
+  height: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  font-size: 0.8rem;
+  font-weight: bold;
+  overflow: hidden;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.65);
+  font-family: Arial, sans-serif;
+}
+
+.prebuilt-pc-navigation-buttons {
+  margin-bottom: 10px;
+}
+
+.prebuilt-pc-button {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.prebuilt-pc-button:hover {
+  background-color: #0056b3;
+}
+
+.pc-type {
+  color: black;
+  display: inline-block;
+  margin: 10px 0;
+  text-align: left;
+}
+
+.pc-price {
+  color: black;
+  display: inline-block;
+  margin: 10px 0;
+  text-align: left;
+}

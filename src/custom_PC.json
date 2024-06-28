@@ -1,0 +1,267 @@
+[
+  {
+    "PC_Type": "High-End Gaming PC",
+    "Price": "₹380,000",
+    "CPU": "AMD Ryzen 9 7950X",
+    "GPU": "NVIDIA GeForce RTX 4090",
+    "Motherboard": "ASUS ROG Strix Z790-E Gaming WiFi (ATX)",
+    "RAM": "G.Skill Trident Z5 RGB DDR5-6400 CL36 32GB Kit (2x16GB)",
+    "Primary_Storage": "Samsung 980 Pro 1TB",
+    "Secondary_Storage": "Samsung 870 QVO 1TB",
+    "Case": "Lian Li O11 Dynamic XL",
+    "Cooling": "EK-Waterblocks EK-Nucleus AIO D-RGB 360",
+    "urls": ["https://sayandsound.lewe.com/wp-content/uploads/2020/05/high-end-gaming-pc.png",
+              "https://5.imimg.com/data5/ANDROID/Default/2022/10/GS/KV/MD/2822525/product-jpeg-500x500.jpg"
+            ]
+  },
+  {
+    "PC_Type": "Enthusiast Gaming PC",
+    "Price": "₹225,000",
+    "CPU": "Intel Core i9-13900K",
+    "GPU": "AMD Radeon RX 7900 XT",
+    "Motherboard": "MSI MEG Z790 Godlike (E-ATX)",
+    "RAM": "Corsair Dominator Platinum RGB DDR4-5200 CL40 32GB Kit (2x16GB)",
+    "Primary_Storage": "WD Black SN850X 500GB",
+    "Secondary_Storage": "Crucial MX500 500GB",
+    "Case": "Fractal Design Meshify C ATX",
+    "Cooling": "Corsair Hydro Series H100i RGB Pro XT",
+    "urls": [
+            "https://www.fractal-design.com/app/uploads/2019/06/Meshify-C-Mini_5.jpg",
+            "https://www.fractal-design.com/app/uploads/2019/06/Meshify-C_7-1200x1200.jpg"
+          ]
+  },
+  {
+    "PC_Type": "High-Performance Gaming PC",
+    "Price": "₹175,000",
+    "CPU": "Intel Core i7-12700K",
+    "GPU": "NVIDIA GeForce RTX 4080",
+    "Motherboard": "Gigabyte X670E Aorus Master (ATX)",
+    "RAM": "TeamGroup Dark Pro DDR4-4400 CL19 32GB Kit (4x8GB)",
+    "Primary_Storage": "Crucial P5 Plus 2TB",
+    "Secondary_Storage": "Kingston A400 240GB",
+    "Case": "NZXT H710i",
+    "Cooling": "NZXT Kraken X53 RGB (240mm Liquid)",
+    "urls": [
+            "https://nzxt.com/assets/cms/34299/1615570836-h710i-2020-white-black-kraken-x-system.png?auto=format&dpr=1.5&fit=crop&h=1000&w=1000",
+            "https://compify.in/wp-content/uploads/2020/10/Untitled-5-1-23.jpg"
+          ]
+  },
+  {
+    "PC_Type": "Mid-Range Gaming PC",
+    "Price": "₹112,500",
+    "CPU": "AMD Ryzen 7 5800X3D",
+    "GPU": "AMD Radeon RX 6700 XT",
+    "Motherboard": "MSI B550M Mortar WiFi (Micro ATX)",
+    "RAM": "G.Skill Ripjaws V DDR4-3600 CL16 16GB Kit (2x8GB)",
+    "Primary_Storage": "Gigabyte Aorus Gen4 7000 1TB",
+    "Secondary_Storage": "ADATA Ultimate SU800 500GB",
+    "Case": "Phanteks Eclipse P400A",
+    "Cooling": "Cooler Master Hyper 212 Evo V2 (Black)",
+    "urls": [
+      "https://computechstore.in/wp-content/uploads/2022/10/Phanteks-Eclipse-P400A-Cabinet-Black-6-1.jpg",
+      "https://www.vortez.net/articles_file/43423_phanteks_eclipse_p400a_review_intro.jpg"
+    ]
+  },
+  {
+    "PC_Type": "Budget Gaming PC",
+    "Price": "₹75,000",
+    "CPU": "Intel Core i5-12600K",
+    "GPU": "NVIDIA GeForce RTX 3060 Ti",
+    "Motherboard": "ASRock B650M Pro RS WiFi (Micro ATX)",
+    "RAM": "Corsair Vengeance LPX DDR4-3200 CL16 32GB Kit (2x16GB)",
+    "Primary_Storage": "Kingston KC3000 500GB",
+    "Secondary_Storage": "Crucial MX500 500GB",
+    "Case": "Cooler Master NR200P",
+    "Cooling": "Cooler Master Hyper 212 Evo V2 (Black)",
+    "urls": [
+      "https://i.ytimg.com/vi/NfnL_hC9OS4/maxresdefault.jpg",
+      "https://cdn.coolermaster.com/media/assets/1025/nr200p_02_limited_size-imageleftorright.png"
+    ]
+  },
+  {
+    "PC_Type": "Content Creation & Gaming PC",
+    "Price": "₹162,500",
+    "CPU": "AMD Ryzen 9 5900X",
+    "GPU": "NVIDIA GeForce RTX 3070",
+    "Motherboard": "ASUS ProArt X670E-Creator WiFi (ATX)",
+    "RAM": "Crucial Ballistix MAX RGB DDR4-3200 CL16 64GB Kit (4x16GB)",
+    "Primary_Storage": "Samsung 980 Pro 1TB",
+    "Secondary_Storage": "Western Digital Blue WD Blue 1TB",
+    "Case": "Corsair Crystal Series 680X RGB",
+    "Cooling": "Noctua NH-U12S chromax.black"
+  },
+  {
+    "PC_Type": "Compact Gaming PC",
+    "Price": "₹85,000",
+    "CPU": "Intel Core i5-11400",
+    "GPU": "AMD Radeon RX 6600 XT",
+    "Motherboard": "MSI B550M Mortar WiFi (Micro ATX)",
+    "RAM": "Patriot Viper 4 Blackout DDR4-3733 CL17 16GB Kit (2x8GB)",
+    "Primary_Storage": "Samsung 980 Pro 500GB",
+    "Secondary_Storage": "Kingston A400 240GB",
+    "Case": "Cooler Master NR200P",
+    "Cooling": "Cooler Master Hyper 212 Evo V2 (Black)"
+  },
+  {
+    "PC_Type": "Streaming & Gaming PC",
+    "Price": "₹162,500",
+    "CPU": "AMD Ryzen 9 5950X",
+    "GPU": "NVIDIA GeForce RTX 3080",
+    "Motherboard": "ASUS ROG Strix Z790-E Gaming WiFi (ATX)",
+    "RAM": "Corsair Vengeance RGB Pro SL DDR4-3600 CL16 16GB Kit (2x8GB)",
+    "Primary_Storage": "WD Black SN850X 1TB",
+    "Secondary_Storage": "Crucial MX500 1TB",
+    "Case": "NZXT H710i",
+    "Cooling": "Corsair Hydro Series H100i RGB Pro XT"
+  },
+  {
+    "PC_Type": "VR-Ready Gaming PC",
+    "CPU": "Intel Core i9-12900K",
+    "Price": "₹190,000",
+    "GPU": "AMD Radeon RX 6900 XT",
+    "Motherboard": "Gigabyte X670E Aorus Master (ATX)",
+    "RAM": "G.Skill Trident Z Royal DDR4-3600 CL16 32GB Kit (4x8GB)",
+    "Primary_Storage": "Crucial P5 Plus 2TB",
+    "Secondary_Storage": "ADATA Ultimate SU800 500GB",
+    "Case": "Fractal Design Meshify C ATX",
+    "Cooling": "NZXT Kraken X53 RGB (240mm Liquid)"
+  },
+  {
+    "PC_Type": "Entry-Level Gaming PC",
+    "Price":"₹65,000",
+    "CPU": "AMD Ryzen 5 5600X",
+    "GPU": "NVIDIA GeForce GTX 1660 Super",
+    "Motherboard": "ASUS Prime H510M-A Micro ATX (LGA1200)",
+    "RAM": "Corsair Vengeance LPX DDR4-3200 CL16 32GB Kit (2x16GB)",
+    "Primary_Storage": "Kingston KC3000 500GB",
+    "Secondary_Storage": "Crucial MX500 500GB",
+    "Case": "Cooler Master NR200P",
+    "Cooling": "Cooler Master Hyper 212 Evo V2 (Black)"
+},
+
+    {
+      "PC_Type": "Budget Gaming & Streaming PC",
+      "Price": "₹65,000",
+      "CPU": "AMD Ryzen 5 5600G",
+      "GPU": "NVIDIA GeForce GTX 1650",
+      "Motherboard": "ASRock B450M DS3H Micro ATX (AM4)",
+      "RAM": "XPG Gammix D10 DDR4-3200 CL16 8GB Kit (1x8GB)",
+      "Primary_Storage": "WD Black SN850X 500GB",
+      "Secondary_Storage": "Kingston A400 240GB",
+      "Case": "Cooler Master NR200P",
+      "Cooling": "Cooler Master Hyper 212 Evo V2 (Black)"
+    },
+    {
+      "PC_Type": "Compact Content Creation PC",
+      "Price": "₹110,000",
+      "CPU": "Intel Core i7-13700K",
+      "GPU": "AMD Radeon RX 6650 XT",
+      "Motherboard": "MSI B550M Mortar WiFi (Micro ATX)",
+      "RAM": "Corsair Vengeance RGB Pro SL DDR4-3600 CL16 16GB Kit (2x8GB)",
+      "Primary_Storage": "Samsung 980 Pro 1TB",
+      "Secondary_Storage": "Western Digital Blue WD Blue 1TB",
+      "Case": "Cooler Master NR200P",
+      "Cooling": "Noctua NH-U12S chromax.black"
+    },
+    {
+      "PC_Type": "Mini ITX Gaming PC",
+      "Price": "₹95,000",
+      "CPU": "AMD Ryzen 5 5600X",
+      "GPU": "NVIDIA GeForce RTX 3060 Ti",
+      "Motherboard": "ASUS ROG Strix B660-A Gaming WiFi (Mini ITX)",
+      "RAM": "G.Skill Ripjaws V DDR4-3600 CL16 16GB Kit (2x8GB)",
+      "Primary_Storage": "Samsung 980 Pro 500GB",
+      "Secondary_Storage": "Kingston A400 240GB",
+      "Case": "Cooler Master NR200P",
+      "Cooling": "Cooler Master Hyper 212 Evo V2 (Black)"
+    },
+    {
+      "PC_Type": "Workstation & Gaming PC",
+      "Price": "₹425,000",
+      "CPU": "AMD Ryzen Threadripper 5995WX",
+      "GPU": "NVIDIA GeForce RTX 3090 Ti",
+      "Motherboard": "ASUS ProArt X670E-Creator WiFi (ATX)",
+      "RAM": "Crucial Ballistix MAX RGB DDR4-3200 CL16 64GB Kit (4x16GB)",
+      "Primary_Storage": "Crucial P5 Plus 2TB",
+      "Secondary_Storage": "ADATA Ultimate SU800 500GB",
+      "Case": "NZXT H710i",
+      "Cooling": "EK-Waterblocks EK-Nucleus AIO D-RGB 360"
+    },
+    {
+      "PC_Type": "Multi-Display Gaming PC",
+      "Price": "₹225,000",
+      "CPU": "Intel Core i9-12900K",
+      "GPU": "AMD Radeon RX 6900 XT",
+      "Motherboard": "MSI MEG Z790 Godlike (E-ATX)",
+      "RAM": "G.Skill Trident Z Royal DDR4-3600 CL16 32GB Kit (4x8GB)",
+      "Primary_Storage": "Samsung 980 Pro 1TB",
+      "Secondary_Storage": "Western Digital Blue WD Blue 1TB",
+      "Case": "Corsair Crystal Series 680X RGB",
+      "Cooling": "Noctua NH-U12S chromax.black"
+    },
+    {
+      "PC_Type": "Home Theater PC",
+      "Price": "₹85,000",
+      "CPU": "Intel Core i5-13400",
+      "GPU": "NVIDIA GeForce GTX 1660 Super",
+      "Motherboard": "MSI B550M Mortar WiFi (Micro ATX)",
+      "RAM": "Crucial Ballistix Max RGB DDR4-3200 CL16 16GB Kit (2x8GB)",
+      "Primary_Storage": "Samsung 980 Pro 500GB",
+      "Secondary_Storage": "Kingston A400 240GB",
+      "Case": "Cooler Master NR200P",
+      "Cooling": "Cooler Master Hyper 212 Evo V2 (Black)"
+    },
+    {
+      "PC_Type": "Streaming & Editing PC",
+      "Price": "₹225,000",
+      "CPU": "AMD Ryzen 9 7950X",
+      "GPU": "NVIDIA GeForce RTX 3080",
+      "Motherboard": "ASUS ROG Strix Z790-E Gaming WiFi (ATX)",
+      "RAM": "Corsair Vengeance RGB Pro SL DDR4-3600 CL16 16GB Kit (2x8GB)",
+      "Primary_Storage": "WD Black SN850X 1TB",
+      "Secondary_Storage": "Crucial MX500 1TB",
+      "Case": "NZXT H710i",
+      "Cooling": "Corsair Hydro Series H100i RGB Pro XT"
+    },
+    {
+      "PC_Type": "All-Rounder Gaming PC",
+      "Price": "₹162,500",
+      "CPU": "Intel Core i7-12700K",
+      "GPU": "NVIDIA GeForce RTX 3070",
+      "Motherboard": "Gigabyte X670E Aorus Master (ATX)",
+      "RAM": "G.Skill Trident Z5 RGB DDR5-6400 CL36 32GB Kit (2x16GB)",
+      "Primary_Storage": "Crucial P5 Plus 2TB",
+      "Secondary_Storage": "Kingston A400 240GB",
+      "Case": "NZXT H710i",
+      "Cooling": "NZXT Kraken X53 RGB (240mm Liquid)"
+    },
+    {
+      "PC_Type": "Ultra-Compact Gaming PC",
+      "Price": "₹125,000",
+      "CPU": "AMD Ryzen 7 7800X3D",
+      "GPU": "NVIDIA GeForce RTX 3060 Ti",
+      "Motherboard": "MSI B550M Mortar WiFi (Micro ATX)",
+      "RAM": "XPG Gammix D10 DDR4-3200 CL16 32GB Kit (2x16GB)",
+      "Primary_Storage": "Samsung 980 Pro 1TB",
+      "Secondary_Storage": "Kingston A400 2TB",
+      "Case": "Cooler Master NR200P",
+      "Cooling": "Cooler Master Hyper 212 Evo V2 (Black)"
+    },
+    {
+      "PC_Type": "Entry-Level Productivity PC",
+      "Price": "₹55,000",
+      "CPU": "Intel Core i3-12100F",
+      "GPU": "AMD Radeon RX 6400",
+      "Motherboard": "ASUS Prime H510M-A Micro ATX (LGA1200)",
+      "RAM": "TeamGroup T-Force Delta RGB DDR4-3000 CL16 8GB Kit (1x8GB)",
+      "Primary_Storage": "Crucial P5 Plus 2TB",
+      "Secondary_Storage": "ADATA Ultimate SU800 500GB",
+      "Case": "Cooler Master NR200P",
+      "Cooling": "Noctua NH-U12S chromax.black"
+    }
+
+]
+
+
+     
+    

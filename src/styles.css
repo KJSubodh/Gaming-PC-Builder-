@@ -1,0 +1,148 @@
+/* Reset default browser styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Use Roboto font for the body */
+    background-image: url('gaming_PC.jpg'); /* Set background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+}
+
+header {
+    background-color:#333333;;
+    color: #ffffff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 50px;
+}
+
+.search-bar {
+    display: flex;
+    flex: 1; /* Take up remaining space */
+    max-width: 800px !important; /* Increase the maximum width to extend the search bar */
+    margin: 0 auto; /* Center the search bar horizontally */
+    justify-content: center; /* Center the content horizontally */
+}
+
+.search-bar input[type="text"] {
+    flex: 1; /* Take up remaining space */
+    padding: 12px; /* Increase padding */
+    border: none;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif; /* Use Arial or a similar sans-serif font */
+    margin-right: 10px;
+}
+
+.search-bar button {
+    padding: 12px 20px; /* Increase padding */
+    border: none;
+    border-radius: 20px;
+    background-color: #febd69;
+    color: #232f3e;
+    cursor: pointer;
+    font-family: Arial, sans-serif; /* Use Arial or a similar sans-serif font */
+}
+
+.account-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the sections horizontally */
+}
+
+.products {
+    flex: 0 0 calc(20% - 40px); /* Adjust width to fit all sections */
+    margin: 20px; /* Maintain margin */
+    padding: 20px; /* Maintain padding */
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.25); /* Add transparency to .products */
+    transition: transform 0.3s ease;
+    overflow: hidden; /* Hide overflow content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+
+
+.products:hover {
+    transform: translateY(-5px);
+}
+
+.products img {
+    display: block;
+    margin: 0 auto 20px; /* Increase bottom margin to separate images from descriptions */
+    width: 100%; /* Set width to 100% to make the image responsive */
+    height: 50%; /* Let the height adjust automatically to maintain aspect ratio */
+    object-fit: cover;
+    border-top-left-radius: 12px; /* Restore border radius for top corners */
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.products-content {
+    padding: 20px;
+    margin-top: 20px; /* Add margin to the top */
+    text-align: center; /* Center the content */
+}
+
+.products h2 {
+    font-size: 24px;
+    color: black; /* Set caption color to black */
+    font-weight: bold; /* Set caption font weight to bold */
+    margin-bottom: 10px;
+    text-align: center; /* Center the text */
+}
+
+/* Make section descriptions transparent */
+.products .description-container {
+    background-color: transparent; /* Make description container transparent */
+    border-radius: 0 0 12px 12px; /* Adjust border radius to match the section */
+}
+
+/* Additional styling for improved aesthetics */
+.description-container {
+    padding: 20px;
+    width: 90%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.45); /* Adjust background color transparency */
+    border-radius: 0 0 12px 12px; /* Adjust border radius to match the section */
+}
+
+.description-container p {
+    color: black; /* Set description text color to black */
+    font-weight: bold; /* Set description text font weight to bold */
+}
+
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0; /* Reduce the padding to make the footer smaller */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Use a better search icon */
+.search-bar button svg {
+    width: 16px; /* Adjust the size of the search icon */
+    height: 16px;
+    fill: #232f3e; /* Change the color of the search icon */
+}

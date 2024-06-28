@@ -1,0 +1,114 @@
+{
+    "Gaming PC Cases": {
+      "High-End Cases": [
+        {
+          "Name": "NZXT H710i",
+          "Price": "16674 ",
+          "Specs": "(ATX, Tempered Glass)",
+          "urls": [
+            "https://nzxt.com/assets/cms/34299/1615570836-h710i-2020-white-black-kraken-x-system.png?auto=format&dpr=1.5&fit=crop&h=1000&w=1000",
+            "https://compify.in/wp-content/uploads/2020/10/Untitled-5-1-23.jpg"
+          ]
+        },
+        {
+          "Name": "Lian Li O11 Dynamic XL",
+          "Price": "20842.5 ",
+          "Specs": "(ATX, Tempered Glass)",
+          "urls": [
+            "https://lian-li.com/wp-content/uploads/2020/11/O11D-XL_black_side45.jpg",
+            "https://lian-li.com/wp-content/uploads/2020/11/O11D-xl-s08-01.png"
+          ]
+        },
+        {
+          "Name": "Corsair iCUE 500X RGB",
+          "Price": "18347.14 ",
+          "Specs": "(ATX, Tempered Glass)",
+          "urls": [
+            "https://assets.corsair.com/image/upload/c_pad,q_auto,h_1024,w_1024,f_auto/products/Cases/base-5000x/Gallery/5000X_RGB_BLACK_26.webp",
+            "https://m.media-amazon.com/images/I/815bEyrmfML.jpg"
+          ]
+        }
+      ],
+      "Mid-Range Cases": [
+        {
+          "Name": "Fractal Design Meshify C ATX",
+          "Price": "12505.55 ",
+          "Specs": "(ATX, Tempered Glass)",
+          "urls": [
+            "https://www.fractal-design.com/app/uploads/2019/06/Meshify-C-Mini_5.jpg",
+            "https://www.fractal-design.com/app/uploads/2019/06/Meshify-C_7-1200x1200.jpg"
+          ]
+        },
+        {
+          "Name": "Phanteks Eclipse P400A",
+          "Price": "10033.96 ",
+          "Specs": "(ATX, Tempered Glass)",
+          "urls": [
+            "https://computechstore.in/wp-content/uploads/2022/10/Phanteks-Eclipse-P400A-Cabinet-Black-6-1.jpg",
+            "https://www.vortez.net/articles_file/43423_phanteks_eclipse_p400a_review_intro.jpg"
+          ]
+        },
+        {
+          "Name": "NZXT H510 Flow",
+          "Price": "8346.85 ",
+          "Specs": "(ATX, Tempered Glass)"
+        },
+        {
+          "Name": "Be Quiet! Pure Base 500DX",
+          "Price": "10857.23 ",
+          "Specs": "(ATX, Tempered Glass)"
+        }
+      ],
+      "Compact & Mini-ITX Cases": [
+        {
+          "Name": "Cooler Master NR200P",
+          "Price": "6670.96 ",
+          "Specs": "(Mini-ITX, Tempered Glass)",
+          "urls": [
+            "https://i.ytimg.com/vi/NfnL_hC9OS4/maxresdefault.jpg",
+            "https://cdn.coolermaster.com/media/assets/1025/nr200p_02_limited_size-imageleftorright.png"
+          ]
+        },
+        {
+          "Name": "Lian Li Q500",
+          "Price": "15007.2 ",
+          "Specs": "(ATX, Tempered Glass)"
+        },
+        {
+          "Name": "NZXT H1",
+          "Price": "12505.55 ",
+          "Specs": "(Mini-ITX, Vertical Design)"
+        }
+      ],
+      "Airflow-Focused Cases": [
+        {
+          "Name": "Lian Li Lancool II Mesh Performance",
+          "Price": "8346.85 ",
+          "Specs": "(ATX, Mesh Front Panel)"
+        },
+        {
+          "Name": "Fractal Design Define 7 Compact",
+          "Price": "15007.2 ",
+          "Specs": "(ATX, Sound Dampening)"
+        },
+        {
+          "Name": "be quiet! Pure Base 500 FX",
+          "Price": "11675.98 ",
+          "Specs": "(ATX, Mesh Front Panel)"
+        }
+      ],
+      "Aesthetics-Focused Cases": [
+        {
+          "Name": "Corsair Crystal Series 680X RGB",
+          "Price": "25005.11 ",
+          "Specs": "(ATX, Tempered Glass)"
+        },
+        {
+          "Name": "Thermaltake Level 20 VT",
+          "Price": "16674 ",
+          "Specs": "(ATX, Tempered Glass)"
+        }
+      ]
+    }
+  }
+  

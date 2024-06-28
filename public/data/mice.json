@@ -1,0 +1,143 @@
+[
+    {
+      "Name": "Logitech G502 Hero",
+      "DPI": 25600,
+      "Hz": 1000,
+      "Price": "₹4500",
+      "Description": "A classic and versatile option with a customizable weight system and programmable buttons."
+    },
+    {
+      "Name": "Razer DeathAdder V2 Pro",
+      "DPI": 30000,
+      "Hz": 8000,
+      "Price": "₹8000",
+      "Description": "Excellent ergonomic design for comfort during long gaming sessions."
+    },
+    {
+      "Name": "SteelSeries Rival 650 Wireless",
+      "DPI": 26000,
+      "Hz": 3000,
+      "Price": "₹7200",
+      "Description": "Features a long battery life and swappable side panels for different grip styles."
+    },
+    {
+      "Name": "Glorious Model O Wireless",
+      "DPI": 19000,
+      "Hz": 1000,
+      "Price": "₹6500",
+      "Description": "Lightweight design for fast movements and a honeycomb shell for breathability."
+    },
+    {
+      "Name": "Zowie EC2-C",
+      "DPI": 3200,
+      "Hz": 1000,
+      "Price": "₹3800",
+      "Description": "Simple and minimalist design favored by esports professionals for its focus on performance."
+    },
+    {
+      "Name": "Fnatic Bolt",
+      "DPI": 16000,
+      "Hz": 1000,
+      "Price": "₹3200",
+      "Description": "Lightweight design with a honeycomb shell and a focus on competitive gaming."
+    },
+    {
+      "Name": "HyperX Pulsefire Haste",
+      "DPI": 16000,
+      "Hz": 1000,
+      "Price": "₹2800",
+      "Description": "Ultra-lightweight design with a perforated back for maximum breathability."
+    },
+    {
+      "Name": "Corsair Katar Pro XT",
+      "DPI": 18000,
+      "Hz": 8000,
+      "Price": "₹2500",
+      "Description": "Affordable option with a lightweight design and high polling rate."
+    },
+    {
+      "Name": "Roccat Kone Pure Ultra",
+      "DPI": 19000,
+      "Hz": 1000,
+      "Price": "₹4200",
+      "Description": "Ergonomic design with a comfortable palm grip and customizable RGB lighting."
+    },
+    {
+      "Name": "EVGA X17 Sniper",
+      "DPI": 16000,
+      "Hz": 8000,
+      "Price": "₹3500",
+      "Description": "Customizable weight system and programmable buttons for a personalized gaming experience."
+    },
+    {
+      "Name": "Logitech G303 Shroud Edition",
+      "DPI": 12000,
+      "Hz": 8000,
+      "Price": "₹3800",
+      "Description": "Lightweight design with a honeycomb shell, co-developed with professional gamer shroud."
+    },
+    {
+      "Name": "Razer Viper Ultimate",
+      "DPI": 20000,
+      "Hz": 8000,
+      "Price": "₹9000",
+      "Description": "Ambidextrous design with a charging dock and long battery life."
+    },
+    {
+      "Name": "SteelSeries Prime Wireless",
+      "DPI": 18000,
+      "Hz": 1000,
+      "Price": "₹8500",
+      "Description": "Focuses on lightweight design and performance with a premium build quality."
+    },
+    {
+      "Name": "Glorious Model D Wireless",
+      "DPI": 19000,
+      "Hz": 1000,
+      "Price": "₹6800",
+      "Description": "Lightweight ergonomic design with a honeycomb shell for breathability."
+    },
+    {
+      "Name": "Zowie S2-C",
+      "DPI": 3200,
+      "Hz": 1000,
+      "Price": "₹4000",
+      "Description": "Simple and symmetrical design favored by esports professionals for its focus on performance."
+    },
+    {
+      "Name": "Fnatic Flick",
+      "DPI": 16000,
+      "Hz": 1000,
+      "Price": "₹3500",
+      "Description": "Lightweight design with a focus on competitive gaming and a flexible cable."
+    },
+    {
+      "Name": "HyperX Pulsefire Surge",
+      "DPI": 16000,
+      "Hz": 1000,
+      "Price": "₹2200",
+      "Description": "Comfortable ergonomic design with customizable RGB lighting and a variety of programmable buttons."
+    },
+    {
+      "Name": "Corsair M65 RGB Ultra",
+      "DPI": 26000,
+      "Hz": 8000,
+      "Price": "₹4000",
+      "Description": "Customizable sniper button, adjustable weight system, and vibrant RGB lighting."
+    },
+    {
+      "Name": "Roccat Kone XP Air",
+      "DPI": 19000,
+      "Hz": 1000,
+      "Price": "₹7500",
+      "Description": "Ergonomic design with a comfortable palm grip, long battery life, and customizable wireless charging."
+    },
+    {
+      "Name": "EVGA X20 Sniper",
+      "DPI": 16000,
+      "Hz": 8000,
+      "Price": "₹4200",
+      "Description": "Optical sensor with high accuracy and precision, customizable weight system, and programmable buttons."
+    }
+  ]
+  

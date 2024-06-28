@@ -1,0 +1,226 @@
+[
+    {
+        "brand": "Acer",
+        "model": "Nitro VG240Y",
+        "size": "23.8-inch",
+        "resolution": "Full HD (1920 x 1080)",
+        "refresh_rate_hz": 165,
+        "response_time_ms": 1,
+        "panel_type": "IPS",
+        "features": ["AMD FreeSync"],
+        "price": "₹10,499",
+        "urls": [
+        "https://m.media-amazon.com/images/I/81bGoTqXEKL.jpg",
+        "https://m.media-amazon.com/images/I/71EpSLQ0YwL.jpg"
+      ]
+    },
+    {
+        "brand": "Asus",
+        "model": "TUF Gaming VG27AQL1A",
+        "size": "27-inch",
+        "resolution": "Full HD (1920 x 1080)",
+        "refresh_rate_hz": 144,
+        "response_time_ms": 1,
+        "panel_type": "IPS",
+        "features": ["G-Sync Compatible"],
+        "price": "₹13,999"
+    },
+    {
+        "brand": "Samsung",
+        "model": "Odyssey G3",
+        "size": "24-inch",
+        "resolution": "Full HD (1920 x 1080)",
+        "refresh_rate_hz": 144,
+        "response_time_ms": 1,
+        "panel_type": "VA",
+        "features": ["FreeSync Premium"],
+        "price": "₹11,499"
+    },
+    {
+        "brand": "LG",
+        "model": "UltraGear 27GN600-B",
+        "size": "27-inch",
+        "resolution": "Full HD (1920 x 1080)",
+        "refresh_rate_hz": 165,
+        "response_time_ms": 1,
+        "panel_type": "IPS",
+        "features": ["FreeSync", "G-Sync Compatible"],
+        "price": "₹14,999"
+    },
+    {
+        "brand": "BenQ",
+        "model": "Zowie XL2411P",
+        "size": "24-inch",
+        "resolution": "Full HD (1920 x 1080)",
+        "refresh_rate_hz": 144,
+        "response_time_ms": 1,
+        "panel_type": "TN",
+        "features": ["Black eQualizer"],
+        "price": "₹12,499"
+    },
+    {
+        "brand": "Acer",
+        "model": "Predator XB253Q GW",
+        "size": "24.5-inch",
+        "resolution": "Full HD (1920 x 1080)",
+        "refresh_rate_hz": 240,
+        "response_time_ms": 0.5,
+        "panel_type": "IPS",
+        "features": ["G-Sync Compatible"],
+        "price": "₹22,499"
+    },
+    {
+        "brand": "Asus",
+        "model": "ROG Strix XG27AQMR",
+        "size": "27-inch",
+        "resolution": "QHD (2560 x 1440)",
+        "refresh_rate_hz": 270,
+        "response_time_ms": 0.5,
+        "panel_type": "Fast IPS",
+        "features": ["G-Sync Compatible"],
+        "price": "₹34,999"
+    },
+    {
+        "brand": "Samsung",
+        "model": "Odyssey G5",
+        "size": "27-inch",
+        "resolution": "Full HD (1920 x 1080)",
+        "refresh_rate_hz": 240,
+        "response_time_ms": 1,
+        "panel_type": "VA",
+        "features": ["FreeSync Premium"],
+        "price": "₹19,999"
+    },
+    {
+        "brand": "LG",
+        "model": "UltraGear 27GN850-B",
+        "size": "27-inch",
+        "resolution": "QHD (2560 x 1440)",
+        "refresh_rate_hz": 240,
+        "response_time_ms": 1,
+        "panel_type": "Nano IPS",
+        "features": ["G-Sync", "FreeSync Compatible"],
+        "price": "₹29,999"
+    },
+    {
+        "brand": "ViewSonic",
+        "model": "Elite XG270QG",
+        "size": "27-inch",
+        "resolution": "QHD (2560 x 1440)",
+        "refresh_rate_hz": 240,
+        "response_time_ms": 1,
+        "panel_type": "IPS",
+        "features": ["FreeSync Premium Pro"],
+        "price": "₹27,999"
+    },
+    {
+        "brand": "Gigabyte",
+        "model": "M27Q",
+        "size": "27-inch",
+        "resolution": "QHD (2560 x 1440)",
+        "refresh_rate_hz": 250,
+        "response_time_ms": 1,
+        "panel_type": "IPS",
+        "features": ["FreeSync Premium", "G-Sync Compatible"],
+        "price": "₹28,499"
+    },
+    {
+        "brand": "MSI",
+        "model": "Optix MAG251VX",
+        "size": "24.5-inch",
+        "resolution": "Full HD (1920 x 1080)",
+        "refresh_rate_hz": 240,
+        "response_time_ms": 1,
+        "panel_type": "Fast IPS",
+        "features": ["FreeSync Premium"],
+        "price": "₹21,999"
+    },
+    {
+        "brand": "AOC",
+        "model": "AGON AG273QX",
+        "size": "27-inch",
+        "resolution": "QHD (2560 x 1440)",
+        "refresh_rate_hz": 240,
+        "response_time_ms": 1,
+        "panel_type": "Nano IPS",
+        "features": ["FreeSync Premium", "G-Sync Compatible"],
+        "price": "₹31,999"
+    },
+    {
+        "brand": "Asus",
+        "model": "TUF Gaming VG27Q1A",
+        "size": "27-inch",
+        "resolution": "QHD (2560 x 1440)",
+        "refresh_rate_hz": 280,
+        "response_time_ms": 1,
+        "panel_type": "Fast IPS",
+        "features": ["FreeSync Premium", "G-Sync Compatible"],
+        "price": "₹33,999"
+    },
+    {
+        "brand": "BenQ",
+        "model": "Zowie XL2546K",
+        "size": "24.5-inch",
+        "resolution": "Full HD (1920 x 1080)",
+        "refresh_rate_hz": 360,
+        "response_time_ms": 0.5,
+        "panel_type": "TN",
+        "features": ["DyAc Technology"],
+        "price": "₹39,999"
+    },
+    {
+        "brand": "Acer",
+        "model": "Predator XB3",
+        "size": "24.5-inch",
+        "resolution": "Full HD (1920 x 1080)",
+        "refresh_rate_hz": 300,
+        "response_time_ms": 0.5,
+        "panel_type": "IPS",
+        "features": ["G-Sync Compatible"],
+        "price": "₹42,499"
+    },
+    {
+        "brand": "Asus",
+        "model": "ROG Strix XG27AQN",
+        "size": "27-inch",
+        "resolution": "QHD (2560 x 1440)",
+        "refresh_rate_hz": 360,
+        "response_time_ms": 0.5,
+        "panel_type": "Fast IPS",
+        "features": ["G-Sync Compatible"],
+        "price": "₹44,999"
+    },
+    {
+        "brand": "Samsung",
+        "model": "Odyssey G7",
+        "size": "27-inch",
+        "resolution": "QHD (2560 x 1440)",
+        "refresh_rate_hz": 300,
+        "response_time_ms": 1,
+        "panel_type": "VA",
+        "features": ["G-Sync", "FreeSync Compatible"],
+        "price": "₹39,999"
+    },
+    {
+        "brand": "LG",
+        "model": "UltraGear 27GP950-B",
+        "size": "27-inch",
+        "resolution": "QHD (2560 x 1440)",
+        "refresh_rate_hz": 360,
+        "response_time_ms": 1,
+        "panel_type": "Nano IPS",
+        "features": ["G-Sync", "FreeSync Compatible"],
+        "price": "₹41,999"
+    },
+    {
+        "brand": "Alienware",
+        "model": "AW2723DF",
+        "size": "27-inch",
+        "resolution": "Full HD (1920 x 1080)",
+        "refresh_rate_hz": 360,
+        "response_time_ms": 0.5,
+        "panel_type": "Fast IPS",
+        "features": ["G-Sync Compatible"],
+        "price": "₹47,999"
+    }
+]
