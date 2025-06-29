@@ -1,0 +1,362 @@
+import React, { useState, useEffect, useRef } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
+import Fuse from "fuse.js";
+import { useCart } from "../context/CartContext";
+
+// Import JSON data
+import pcData from "../data/custom_PC.json";
+import cpuData from "../data/cpu.json";
+import gpuData from "../data/gpu.json";
+import ramData from "../data/ram.json";
+import storageData from "../data/storage.json";
+import motherboardData from "../data/mb.json";
+import miceData from "../data/mice.json";
+import keyboardData from "../data/keyboards.json";
+import monitorData from "../data/monitor.json";
+import headphoneData from "../data/headphones.json";
+import microphoneData from "../data/microphone.json";
+import webcamData from "../data/webcam.json";
+import casesData from "../data/cases.json";
+import coolingData from "../data/cooling.json";
+import psuData from "../data/psu.json";
+
+// Material UI components & icons
+import {
+  Box,
+  Container,
+  TextField,
+  IconButton,
+  Button,
+  Typography,
+  Paper,
+  Snackbar,
+  Dialog,
+  AppBar,
+  Toolbar,
+  Slide,
+  Grid,
+  Card,
+  CardMedia,
+  CardContent,
+  CardActions,
+} from "@mui/material";
+import { styled } from "@mui/material/styles";
+import SearchIcon from "@mui/icons-material/Search";
+import CloseIcon from "@mui/icons-material/Close";
+
+// Gradient container background
+const GradientContainer = styled(Container)(({ theme }) => ({
+  minHeight: "100vh",
+  background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+  padding: theme.spacing(2),
+}));
+
+// Translucent Paper for content
+const TranslucentPaper = styled(Paper)(({ theme }) => ({
+  backgroundColor: "rgba(255, 255, 255, 0.97)",
+  backdropFilter: "blur(10px)",
+  padding: theme.spacing(3),
+  borderRadius: theme.shape.borderRadius,
+  boxShadow: theme.shadows[5],
+  transition: "all 0.3s ease",
+  width: "100%",
+}));
+
+// Transition for the full-screen overlay
+const Transition = React.forwardRef(function Transition(props, ref) {
+  return <Slide direction="down" ref={ref} {...props} />;
+});
+
+const Search = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const queryParams = new URLSearchParams(location.search);
+  const initialSearchQuery = queryParams.get("q") || "";
+  const [searchQuery, setSearchQuery] = useState(initialSearchQuery);
+  const [filteredResults, setFilteredResults] = useState([]);
+  const [openOverlay, setOpenOverlay] = useState(false);
+  const [cartMessage, setCartMessage] = useState(null);
+  const searchInputRef = useRef(null);
+  const { addToCart } = useCart();
+
+  // Helper: extract price
+  const extractPrice = (item) => {
+    const keys = ["pricing (INR)", "Price (INR)", "price", "Price", "pricing"];
+    for (let key of keys) {
+      if (item[key]) {
+        const price = parseFloat(item[key].toString().replace(/[^0-9.]/g, ""));
+        return isNaN(price) ? null : price;
+      }
+    }
+    return null;
+  };
+
+  // Helper: get product name
+  const getProductName = (item) => {
+    return item.model || item.Name || item.PC_Type || item.name || "Unknown Product";
+  };
+
+  // Helper: flatten nested JSON arrays
+  const getFlattenedItems = (data, category) => {
+    if (!data) return [];
+    return Object.values(data).flat().map((item) => ({ ...item, category }));
+  };
+
+  // Helper: fix image URLs if relative
+  const getProperImageUrl = (url) => {
+    if (!url) return "";
+    return url.startsWith("/") ? process.env.PUBLIC_URL + url : url;
+  };
+
+  // Build the complete products list
+  const allProducts = [
+    ...pcData.map((item) => ({ ...item, id: item.id || "", name: item.PC_Type, category: "Prebuilt PC" })),
+    ...cpuData.gaming_cpus.map((item) => ({ ...item, id: item.id || "", name: item.name, category: "CPU" })),
+    ...gpuData.map((item) => ({ ...item, id: item.id || "", name: item.name, category: "GPU" })),
+    ...ramData.map((item) => ({ ...item, id: item.id || "", name: item.name, category: "RAM" })),
+    ...getFlattenedItems(storageData["NVMe PCIe M.2 (Primary Storage)"], "NVMe PCIe M.2 SSD").map((item) => ({ ...item, id: item.id || "" })),
+    ...getFlattenedItems(storageData["SATA III SSD (Secondary Storage)"], "SATA SSD").map((item) => ({ ...item, id: item.id || "" })),
+    ...getFlattenedItems(storageData["HDD (Secondary Storage)"], "HDD").map((item) => ({ ...item, id: item.id || "" })),
+    ...motherboardData.map((item) => ({ ...item, id: item.id || "", name: item.name, category: "Motherboard" })),
+    ...miceData.map((item) => ({ ...item, id: item.id || "", name: item.Name, category: "Mouse" })),
+    ...keyboardData.map((item) => ({ ...item, id: item.id || "", name: item.name, category: "Keyboard" })),
+    ...monitorData.map((item) => ({
+      ...item,
+      id: "",
+      name: item.model,
+      category: "Monitor"
+    })),
+    ...getFlattenedItems(headphoneData["GamingHeadphones/Earphones"], "Headphones").map((item) => ({ ...item, id: item.id || "" })),
+    ...getFlattenedItems(microphoneData.microphones, "Microphone").map((item) => ({ ...item, id: item.id || "" })),
+    ...getFlattenedItems(webcamData.webcams, "Webcam").map((item) => ({ ...item, id: item.id || "" })),
+    ...getFlattenedItems(casesData["Gaming PC Cases"], "Case").map((item) => ({ ...item, id: item.id || "" })),
+    ...getFlattenedItems(coolingData["Cooling Solutions"], "Cooling").map((item) => ({ ...item, id: item.id || "" })),
+    ...psuData.map((item) => ({ ...item, id: item.id || "", name: item.name, category: "PSU" })),
+  ];
+
+  // Initialize Fuse for fuzzy search
+  const fuse = new Fuse(allProducts, {
+    keys: ["name", "PC_Type", "Name", "model", "category", "brand"],
+    includeScore: true,
+    threshold: 0.3,
+  });
+
+  useEffect(() => {
+    if (searchQuery.trim() === "") {
+      setFilteredResults([]);
+      setOpenOverlay(false);
+      return;
+    }
+    const results = fuse.search(searchQuery).map((result) => ({
+      ...result.item,
+      price: extractPrice(result.item),
+      fuseScore: result.score,
+    }));
+
+    // Custom sort: prioritize certain storage categories
+    results.sort((a, b) => {
+      const getPriority = (item) => {
+        if (item.category === "NVMe PCIe M.2 SSD") return 1;
+        if (item.category === "SATA SSD") return 2;
+        return 3;
+      };
+      const prioA = getPriority(a);
+      const prioB = getPriority(b);
+      if (prioA !== prioB) return prioA - prioB;
+      return a.fuseScore - b.fuseScore;
+    });
+
+    setFilteredResults(results);
+    setOpenOverlay(true);
+  }, [searchQuery]);
+
+  // Close overlay when clicking outside the search input
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (searchInputRef.current && !searchInputRef.current.contains(event.target)) {
+        setOpenOverlay(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  const handleSearch = () => {
+    if (searchQuery.trim() !== "") {
+      setOpenOverlay(false);
+      navigate(`/search?q=${searchQuery.trim()}`);
+    }
+  };
+
+  // When a suggestion is clicked, update query and navigate
+  const handleSuggestionClick = (item) => {
+    const productName = item.category === "Monitor" ? item.model : getProductName(item);
+    setSearchQuery(productName);
+    setOpenOverlay(false);
+    navigate(`/search?q=${productName}`);
+  };
+
+  const handleAddToCart = (item) => {
+    let product;
+    if (item.category === "Monitor") {
+      product = {
+        id: "",
+        name: item.model,
+        price: item.price,
+        category: item.category,
+      };
+    } else {
+      product = {
+        id: item.id,
+        name: getProductName(item),
+        price: item.price,
+        category: item.category,
+      };
+    }
+    console.log("Adding to cart:", product);
+    addToCart(product);
+    setCartMessage(`${product.name} added to cart!`);
+    setTimeout(() => setCartMessage(null), 3000);
+  };
+
+  return (
+    <GradientContainer maxWidth={location.pathname === "/search" ? false : "sm"}>
+      <TranslucentPaper>
+        <Box display="flex" alignItems="center" position="relative">
+          <TextField
+            fullWidth
+            variant="outlined"
+            placeholder="Search for products"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            onKeyDown={(e) => e.key === "Enter" && handleSearch()}
+            inputRef={searchInputRef}
+            sx={{ borderRadius: 2, backgroundColor: "rgba(255,255,255,0.97)" }}
+          />
+          <IconButton onClick={handleSearch} sx={{ position: "absolute", right: 8 }}>
+            <SearchIcon />
+          </IconButton>
+        </Box>
+
+        {/* Full-screen overlay for search suggestions */}
+        <Dialog
+          fullScreen
+          open={openOverlay && filteredResults.length > 0 && location.pathname === "/"}
+          onClose={() => setOpenOverlay(false)}
+          TransitionComponent={Transition}
+        >
+          <AppBar sx={{ position: "relative", backgroundColor: "#764ba2" }}>
+            <Toolbar>
+              <IconButton edge="start" color="inherit" onClick={() => setOpenOverlay(false)} aria-label="close">
+                <CloseIcon />
+              </IconButton>
+              <Typography sx={{ ml: 2, flex: 1 }} variant="h6">
+                Search Suggestions
+              </Typography>
+            </Toolbar>
+          </AppBar>
+          <Box sx={{ p: 2 }}>
+            <Grid container spacing={2}>
+              {filteredResults.map((item, index) => (
+                <Grid item xs={12} sm={6} md={4} key={index}>
+                  <Box
+                    onClick={() => handleSuggestionClick(item)}
+                    sx={{
+                      p: 1,
+                      display: "flex",
+                      alignItems: "center",
+                      borderRadius: 2,
+                      backgroundColor: "rgba(255,255,255,0.85)",
+                      transition: "background-color 0.2s, transform 0.2s",
+                      "&:hover": { backgroundColor: "rgba(0,0,0,0.04)", transform: "scale(1.02)" },
+                      cursor: "pointer",
+                    }}
+                  >
+                    {item.urls && item.urls.length > 0 && (
+                      <Box
+                        component="img"
+                        src={getProperImageUrl(item.urls[0])}
+                        alt={item.category === "Monitor" ? item.model : getProductName(item)}
+                        sx={{ width: 60, height: 60, mr: 2, objectFit: "contain" }}
+                      />
+                    )}
+                    <Box>
+                      <Typography variant="h6" fontWeight="bold">
+                        {item.category === "Monitor" ? item.model : getProductName(item)}
+                      </Typography>
+                      <Typography variant="body1" color="textSecondary">
+                        {item.category}
+                      </Typography>
+                    </Box>
+                  </Box>
+                </Grid>
+              ))}
+            </Grid>
+          </Box>
+        </Dialog>
+
+        {/* Render full search results in a grid layout with smaller cards */}
+        {location.pathname === "/search" && (
+          <Box mt={3}>
+            <Typography variant="h4" gutterBottom>
+              Search Results for "{searchQuery}"
+            </Typography>
+            {filteredResults.length > 0 ? (
+              <Grid container spacing={2}>
+                {filteredResults.map((item, index) => (
+                  <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
+                    <Card
+                      sx={{
+                        transition: "transform 0.2s",
+                        "&:hover": { transform: "scale(1.02)" },
+                        height: "100%",
+                        display: "flex",
+                        flexDirection: "column",
+                        backgroundColor: "rgba(255,255,255,0.85)",
+                      }}
+                    >
+                      {item.urls && item.urls.length > 0 && (
+                        <CardMedia
+                          component="img"
+                          image={getProperImageUrl(item.urls[0])}
+                          alt={item.category === "Monitor" ? item.model : getProductName(item)}
+                          sx={{ height: 150, objectFit: "contain" }}
+                        />
+                      )}
+                      <CardContent sx={{ flexGrow: 1, p: 1 }}>
+                        <Typography variant="subtitle1" gutterBottom>
+                          {item.category === "Monitor" ? item.model : getProductName(item)}
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                          {item.category}
+                        </Typography>
+                        <Typography variant="subtitle2" color="error" sx={{ mt: 0.5 }}>
+                          ₹{item.price || "N/A"}
+                        </Typography>
+                      </CardContent>
+                      <CardActions sx={{ p: 1 }}>
+                        <Button variant="contained" onClick={() => handleAddToCart(item)} size="small">
+                          🛒 Add to Cart
+                        </Button>
+                      </CardActions>
+                    </Card>
+                  </Grid>
+                ))}
+              </Grid>
+            ) : (
+              <Typography variant="h5">No results found.</Typography>
+            )}
+          </Box>
+        )}
+      </TranslucentPaper>
+      <Snackbar
+        open={Boolean(cartMessage)}
+        message={cartMessage}
+        anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+        autoHideDuration={3000}
+      />
+    </GradientContainer>
+  );
+};
+
+export default Search;

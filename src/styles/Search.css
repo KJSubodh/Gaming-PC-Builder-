@@ -1,0 +1,237 @@
+/* Search Container */
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Search Box */
+.search-box {
+  width: 100%;
+  max-width: 700px;
+  position: relative;
+}
+
+/* Search Input Group */
+.search-input-group {
+  display: flex;
+  align-items: center;
+  border: 2px solid #007bff;
+  border-radius: 50px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Search Input */
+.search-input {
+  flex: 1;
+  padding: 12px 18px;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 50px 0 0 50px;
+  transition: all 0.3s ease;
+}
+
+/* Search Button */
+.search-button {
+  background: linear-gradient(45deg, #007bff, #0056b3);
+  color: white;
+  white-space: nowrap;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  border-radius: 0 50px 50px 0;
+  transition: background 0.3s ease;
+}
+
+.search-button:hover {
+  background: linear-gradient(45deg, #0056b3, #007bff);
+}
+
+/* Search Suggestions */
+.search-suggestions {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 300px;
+  overflow-y: auto;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+}
+
+.search-suggestions .search-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.search-suggestions .search-item:hover {
+  background: #f9f9f9;
+}
+
+.suggestion-image {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  object-fit: contain;
+}
+
+/* Search Results Container */
+.search-results {
+  background: rgba(255, 255, 255, 0.55);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-top: 20px;
+}
+
+.search-results h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+/* Product List Styling */
+.search-results-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+.search-results-list .search-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  transition: background 0.2s;
+}
+
+.search-results-list .search-item:last-child {
+  border-bottom: none;
+}
+
+.search-results-list .search-item:hover {
+  background: #fafafa;
+}
+
+/* Product image on the left */
+.result-image {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  object-fit: contain;
+}
+
+/* Product Information Section */
+.product-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.product-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #007185;
+  margin-bottom: 5px;
+}
+
+.product-category {
+  font-size: 14px;
+  color: #565959;
+  margin-bottom: 8px;
+}
+
+.product-price {
+  font-size: 16px;
+  color: #B12704;
+  font-weight: bold;
+}
+
+/* Add-to-Cart Button */
+.add-to-cart {
+  background: #ffd814;
+  border: 1px solid #fcd200;
+  padding: 10px 16px;
+  font-size: 14px;
+  color: #111;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: background 0.2s;
+  min-width: 100px;
+  flex-shrink: 0;
+}
+
+.add-to-cart:hover {
+  background: #f7ca00;
+}
+
+/* Cart Notification Popup */
+.cart-popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #007600;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  animation: fadeInOut 3s ease-in-out;
+  z-index: 1000;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(-20px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-20px); }
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .search-input-group {
+    flex-direction: column;
+  }
+  .search-input {
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+  }
+  .search-button {
+    border-radius: 4px;
+    border: 1px solid #ddd;
+  }
+  .search-results-list .search-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .result-image {
+    margin-bottom: 10px;
+  }
+  .add-to-cart {
+    margin-top: 10px;
+    align-self: stretch;
+  }
+}

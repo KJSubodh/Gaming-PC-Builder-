@@ -1,0 +1,130 @@
+{
+  "Cooling Solutions": {
+    "Air CPU Coolers": [
+      {
+        "Name": "Cooler Master Hyper 212 Evo V2 (Black)",
+        "Price": "3334",
+        "urls": [
+          "https://www.modders-inc.com/wp-content/uploads/image//2020/11/IMG_7164-671x680.jpg",
+          "https://m.media-amazon.com/images/I/715wWDab8pL.jpg"
+        ]
+      },
+      {
+        "Name": "be quiet! Pure Rock 2 Black",
+        "Price": "5001 ",
+        "urls": [
+          "https://www.bequiet.com/admin/ImageServer.php?ID=6ca2da30625@be-quiet.net&omitPreview=true&width=600",
+          "https://www.bequiet.com/admin/ImageServer.php?ID=de1fba30359@be-quiet.net&width=350"
+        ]
+      },
+      {
+        "Name": "Noctua NH-U12S chromax.black",
+        "Price": "6669 ",
+        "urls": [
+          "https://noctua.at/pub/media/catalog/product/cache/0cdbea399f8ed06da39b3854134f6934/n/h/nh_u12s_chromax_black_1_1.jpg",
+          "https://noctua.at/pub/media/catalog/product/cache/0cdbea399f8ed06da39b3854134f6934/n/h/nh_u12s_chromax_black_5_1.jpg"
+        ]
+      }
+    ],
+    "Liquid CPU Coolers": [
+      {
+        "Name": "NZXT Kraken X53 RGB (240mm)",
+        "Price": "12505 ",
+        "urls": [
+          "https://nzxt.com/assets/cms/34299/1631821659-kraken-x53-rgb-white-keyshot.png?auto=format&dpr=1.5&fit=crop&h=1000&w=1000",
+          "https://5.imimg.com/data5/SELLER/Default/2022/11/DW/QP/BA/159812030/nzxt-kraken-x53-240mm-aio-liquid-cooler-with-rgb-pump-rl-krx53-01--500x500.jpg"
+        ]
+      },
+      {
+        "Name": "Corsair Hydro Series H100i RGB Pro XT (240mm)",
+        "Price": "15006 ",
+        "urls": [
+          "https://assets.corsair.com/image/upload/c_pad,q_auto,h_1024,w_1024,f_auto/products/Liquid-Cooling/CW-9060043-WW/Gallery/H100i_RGB_PRO_XT_01.webp?width=1080&quality=85&auto=webp&format=pjpg",
+          "https://assets.corsair.com/image/upload/c_pad,q_auto,h_1024,w_1024,f_auto/products/Liquid-Cooling/CW-9060043-WW/Gallery/H100i_RGB_PRO_XT_03.webp?width=1080&quality=85&auto=webp&format=pjpg"
+        ]
+      },
+      {
+        "Name": "EK-Waterblocks EK-Nucleus AIO D-RGB 360 (360mm)",
+        "Price": "20845 ",
+        "urls": [
+          "https://www.ekwb.com/shop/media/catalog/product/cache/1/image/x800/17f82f742ffe127f42dca9de82fb58b1/e/k/ek-nucleus-aio-cr360-lux-d-rgb-art4.jpeg",
+          "https://www.ekwb.com/shop/media/catalog/product/cache/1/thumbnail/1600x1067/17f82f742ffe127f42dca9de82fb58b1/e/k/ek-nucleus-aio-cr360-lux-d-rgb-art5.jpeg"
+        ]
+      },
+      {
+      
+          "Name": "MSI MAG CORELIQUID M360 AIO CPU Liquid Cooler",
+          "Price": "8,280",
+          "urls": [
+            "/uploads/1740901996060-MSI MAG CORELIQUID M360 AIO CPU Liquid Cooler, Split-Flow Water Cooling.jpg"
+          ]
+      }
+    ],
+    "Case Fans": [
+      {
+        "Name": "Noctua NF-F12 (120mm, Black)",
+        "Price": "2501 "
+      },
+      {
+        "Name": "be quiet! Pure Wings 2 140mm PWM High Speed",
+        "Price": "1669 "
+      },
+      {
+        "Name": "Corsair Air Series SP120 RGB Pro (120mm)",
+        "Price": "2087 "
+      },
+      {
+        "Name": "Lian Li UNI FAN SL140 (140mm)",
+        "Price": "2501 "
+      },
+      {
+        "Name": "NZXT Aer RGB 2 120 (120mm)",
+        "Price": "1669 "
+      },
+      {
+        "Name": "Phanteks PH-F125T30 Black (120mm)",
+        "Price": "2087 "
+      },
+      {
+        "Name": "Thermaltake Riing Plus 12 RGB Radiator Fan (120mm)",
+        "Price": "1669 "
+      },
+      {
+        "Name": "EK-CoolStream D-RGB 140 (140mm)",
+        "Price": "2919 "
+      },
+      {
+        "Name": "Cooler Master MasterFan MF120 Halo (120mm)",
+        "Price": "1669 "
+      },
+      {
+        "Name": "SilverStone Fara RGB 120 (120mm)",
+        "Price": "1255 "
+      }
+    ],
+    "Thermal Paste": [
+      {
+        "Name": "Arctic MX-4",
+        "Price": "834 "
+      },
+      {
+        "Name": "Noctua NT-H1",
+        "Price": "1255 "
+      }
+    ],
+    "Cable Management": [
+      {
+        "Name": "Zip ties",
+        "Price": "417 "
+      },
+      {
+        "Name": "Cable combs",
+        "Price": "834 "
+      },
+      {
+        "Name": "PSU cable extensions (optional)",
+        "Price": "2501 "
+      }
+    ]
+  }
+}

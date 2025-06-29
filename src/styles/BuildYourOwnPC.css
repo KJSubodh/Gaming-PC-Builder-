@@ -1,0 +1,283 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Background Container */
+.pc-image {
+  background-image: url('../assets/build-your-own-PC.jpg');
+  background-size: contain; /* renders the whole image without cropping */
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.975;
+  padding: 50px 0;
+}
+
+/* Main Container */
+.build-pc-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+.build-pc-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #333;
+}
+
+.build-pc-container p {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+/* Component Section */
+.component {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+}
+
+.component h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+/* Select Button - Reduced size */
+.select-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;       /* smaller padding */
+  font-size: 0.9rem;       /* smaller font size */
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.select-button:hover {
+  background-color: #0056b3;
+}
+
+/* Horizontal Scrolling Panel */
+.horizontal-scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding: 10px 0;
+}
+
+/* Product Card */
+.selection-card {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 0 10px;
+  width: 280px;
+  vertical-align: top;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.selection-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Image */
+.card-image {
+  width: 90%; /* Reduce the width to make it look more spacious */
+  height: 160px; /* Slightly reduced height */
+  object-fit: contain; /* Ensures the full image is visible without cropping */
+  display: block;
+  margin: 12px auto; /* Centers the image within the card */
+  border-radius: 6px; /* Slightly rounded corners for a softer look */
+}
+
+/* Card Content */
+.card-content {
+  padding: 10px;
+}
+
+/* Card Title - Smaller Font */
+.card-title {
+  font-size: 1rem;        /* reduced from 1.15rem */
+  margin-bottom: 6px;
+  color: #222;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Card Description - Smaller Font */
+.card-description {
+  font-size: 0.9rem !important; /* Ensure readability */
+  margin-bottom: 8px;
+  color: #555;
+  display: block;
+  max-height: none; /* Ensure it's not restricted */
+  overflow: visible; /* Allow full text rendering */
+  white-space: normal; /* Allow wrapping */
+}
+
+.card-specs {
+  font-size: 0.9rem !important; /* Ensure readability */
+  margin-bottom: 8px;
+  color: #555;
+  display: block;
+  max-height: none; /* Ensure it's not restricted */
+  overflow: visible; /* Allow full text rendering */
+  white-space: normal; /* Allow wrapping */
+}
+
+/* Card Price */
+.card-price {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #007bff;
+}
+
+/* Card Button */
+.card-button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 5px 8px; /* Reduced padding */
+  font-size: 0.8rem; /* Slightly smaller font */
+  border-radius: 3px; /* More compact corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 90%; /* Slightly narrower than full width */
+  display: block;
+  margin: 5px auto; /* Centered within the card */
+}
+
+.card-button:hover {
+  background-color: #218838;
+  transform: scale(1.02);
+}
+
+/* Build My PC Button */
+.build-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Cart Styles */
+.cart {
+  margin-top: 30px;
+  padding: 20px;
+  background: rgba(248, 249, 250, 0.9);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.cart h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #333;
+}
+
+.cart ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.cart li {
+  font-size: 1rem;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cart li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.cart button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart button + button {
+  margin-left: 10px;
+}
+
+/* Form / User Info */
+.user-info {
+  margin-top: 20px;
+}
+
+.user-info input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.user-info input::placeholder {
+  color: #999;
+}
+
+.user-info input:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .build-pc-container {
+    padding: 15px;
+  }
+  
+  .selection-card {
+    width: 90%;
+    margin: 10px auto;
+    display: block;
+  }
+  
+  .horizontal-scroll {
+    white-space: normal;
+  }
+  
+  .card-image {
+    height: 180px;
+  }
+}

@@ -1,0 +1,280 @@
+/* Enhanced BuyPreBuiltPC.css – Compact, modern with gradients, translucency, and uniform images */
+
+/* Container */
+.prebuilt-pc-container {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.85), rgba(245,245,245,0.85));
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+  font-family: 'Montserrat', sans-serif;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255,255,255,0.5);
+  animation: fadeIn 0.6s ease;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Heading */
+.prebuilt-pc-container h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* PC Item Card */
+.prebuilt-pc-item {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.prebuilt-pc-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* PC Type */
+.prebuilt-pc-item h2 {
+  font-size: 1.5rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+/* PC Images - Uniform dimensions */
+.prebuilt-pc-image {
+  width: 250px;
+  height: 250px;
+  margin: 8px;
+  border-radius: 6px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border: 2px solid rgba(22, 160, 133, 0.5);
+}
+.prebuilt-pc-image:hover {
+  transform: scale(1.03);
+}
+
+/* PC Specifications – Modern, stylish, and with black text */
+.prebuilt-pc-specs {
+  margin-top: 15px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  color: #000;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.prebuilt-pc-specs::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(46,204,113,0.2), rgba(22,160,133,0.2));
+  z-index: 0;
+}
+.prebuilt-pc-specs h3 {
+  font-size: 1.3rem;
+  color: #000;
+  margin-bottom: 8px;
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 1px 3px rgba(255,255,255,0.6);
+}
+.prebuilt-pc-specs ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+.prebuilt-pc-specs li {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 4px;
+  padding-left: 12px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+.prebuilt-pc-specs li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: #27ae60;
+}
+.prebuilt-pc-specs li:hover {
+  color: #000;
+}
+
+/* Price Section */
+.prebuilt-pc-price {
+  margin-top: 15px;
+  text-align: center;
+}
+.prebuilt-pc-price h3 {
+  font-size: 1.5rem;
+  background: linear-gradient(45deg, #2ecc71, #27ae60);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+/* Navigation Buttons */
+.prebuilt-pc-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.prebuilt-pc-navigation button {
+  flex: 1;
+  margin: 0 5px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  color: #fff;
+  background: linear-gradient(45deg, #f39c12, #d35400);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+.prebuilt-pc-navigation button:hover {
+  background: linear-gradient(45deg, #e67e22, #c0392b);
+  transform: translateY(-2px);
+}
+
+/* Action Buttons */
+.prebuilt-pc-item button {
+  display: block;
+  width: 100%;
+  margin-top: 12px;
+  padding: 10px;
+  font-size: 1rem;
+  color: #fff;
+  background: linear-gradient(45deg, #8e44ad, #6c3483);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+.prebuilt-pc-item button:hover {
+  background: linear-gradient(45deg, #7d3c98, #5e3370);
+  transform: scale(1.02);
+}
+
+/* Cart Section */
+.prebuilt-pc-cart {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  text-align: center;
+  animation: slideUp 0.5s ease;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255,255,255,0.5);
+}
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.prebuilt-pc-cart h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+.prebuilt-pc-cart ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.cart-item:last-child {
+  border-bottom: none;
+}
+.cart-item span {
+  font-size: 0.95rem;
+  color: #555;
+}
+.cart-item button {
+  background: linear-gradient(45deg, #e74c3c, #c0392b);
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.cart-item button:hover {
+  background: linear-gradient(45deg, #c0392b, #a93226);
+}
+
+/* User Details */
+.user-details {
+  margin-top: 15px;
+  text-align: left;
+}
+.user-details h2 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+.user-details input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 4px;
+  font-size: 0.95rem;
+  background: rgba(255,255,255,0.8);
+}
+
+/* Invoice Container */
+.invoice-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.invoice-item {
+  max-width: 500px;
+  padding: 15px;
+  background-color: rgba(249,249,249,0.95);
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .prebuilt-pc-container {
+    padding: 15px;
+  }
+  .prebuilt-pc-navigation {
+    flex-direction: column;
+  }
+  .prebuilt-pc-navigation button {
+    margin: 5px 0;
+  }
+  .prebuilt-pc-image {
+    width: 100%;
+    height: auto;
+    max-height: 180px;
+  }
+}

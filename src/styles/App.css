@@ -1,0 +1,271 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.App {
+  text-align: center;
+}
+
+.app-search-bar{
+  width: 100%;
+  max-width: 700px;
+  position: relative;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+  padding: 10px 20px;
+  color: white;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 100; /* Ensure header is above main content */
+}
+
+header a img {
+  height: 80px;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: #2c2c2c; /* Dark theme */
+  border-radius: 8px;
+  padding: 10px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1000; /* Ensure search bar is above other elements */
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 12px;
+  font-size: 16px;
+  background: transparent;
+  color: black;
+}
+
+.search-bar input::placeholder {
+  color: #bbb;
+}
+
+.search-bar button {
+  border: none;
+  background: #ff8c00; /* Vibrant orange */
+  color: white;
+  padding: 10px 14px;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.search-bar button:hover {
+  background: #ff6500;
+}
+
+/* Search Suggestions Dropdown */
+.search-suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #1e1e1e;
+  border-radius: 6px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  max-height: 250px;
+  overflow-y: auto;
+  z-index: 1001; /* Ensure dropdown is above everything */
+}
+
+.search-suggestions li {
+  list-style: none;
+  padding: 10px;
+  color: black;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.search-suggestions li:hover {
+  background: #ff6500;
+}
+
+/* Account Menu */
+.account-menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #222; /* Dark theme */
+  padding: 12px 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 100; /* Ensure account menu is above main content */
+}
+
+/* General Link Styling */
+.account-menu-link {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Space between icon and text */
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.account-menu-link:hover {
+  color: lightblue;
+  transform: scale(1.05);
+}
+
+.contact-us-link-text:hover {
+  color: lightblue;
+  transform: scale(1.05);
+}
+
+.icon {
+  font-size: 18px;
+}
+
+.account-menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Cart Item Count Styling */
+.account-menu a:last-child {
+  background: blue;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.2s ease-in-out;
+}
+
+.account-menu a:last-child:hover {
+  background: lightblue;
+}
+
+/* Main Content */
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  position: relative;
+  z-index: 1; /* Ensure main content is below header and search */
+}
+
+/* Section Styling */
+.build-your-own-pc,
+.buy-gaming-pc-parts,
+.buy-custom-built-pc,
+.gaming-pc-accessories {
+  background: rgba(255, 255, 255, 0.37);
+  backdrop-filter: blur(5px);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+  transition: transform 0.25s ease-in-out, box-shadow 0.3s ease-in-out;
+  animation: fadeIn 0.25s ease-in-out;
+  position: relative;
+  z-index: 1; /* Ensure sections are below search suggestions */
+}
+
+.build-your-own-pc:hover,
+.buy-gaming-pc-parts:hover,
+.buy-custom-built-pc:hover,
+.gaming-pc-accessories:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Images */
+.build-your-own-pc img,
+.buy-gaming-pc-parts img,
+.buy-custom-built-pc img,
+.gaming-pc-accessories img {
+  width: 100%;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.build-your-own-pc img:hover,
+.buy-gaming-pc-parts img:hover,
+.buy-custom-built-pc img:hover,
+.gaming-pc-accessories img:hover {
+  transform: scale(1.1);
+}
+
+/* Headings */
+.products-container h2 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: black;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.products-container h2:hover {
+  color: #555;
+}
+
+/* Paragraphs */
+.products-container p {
+  font-size: 14px;
+  color: black;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+  animation: slideUp 0.5s ease-in-out;
+  position: relative;
+  z-index: 1; /* Ensure footer is below header and search */
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

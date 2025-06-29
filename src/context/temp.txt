@@ -1,0 +1,450 @@
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from 'react-router-dom';
+import {
+  AppBar,
+  Toolbar,
+  IconButton,
+  Typography,
+  Box,
+  Container,
+  Grid,
+  Paper,
+  Button,
+  InputAdornment,
+  TextField,
+  Autocomplete,
+  Badge,
+  Drawer,
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
+  useMediaQuery,
+  CssBaseline
+} from '@mui/material';
+import { createTheme, ThemeProvider, responsiveFontSizes } from '@mui/material/styles';
+import { useTheme } from '@mui/material/styles';
+import { CartProvider, useCart } from './context/CartContext';
+import {
+  Menu as MenuIcon,
+  Search as SearchIcon,
+  ShoppingCart as ShoppingCartIcon,
+  AccountCircle,
+  Phone as ContactIcon,
+} from '@mui/icons-material';
+
+// Import your components
+import BuildYourOwnPC from './components/BuildYourOwnPC';
+import BuyPreBuiltPC from './components/BuyPreBuiltPC';
+import BuyGamingPCParts from './components/BuyGamingPCParts';
+import GamingPCAccessories from './components/GamingPCAccessories';
+import CartPage from './components/CartPage';
+import ContactUs from './components/ContactUs';
+import JsonUploader from './components/JsonUploader';
+import Search from './components/Search';
+
+/**
+ * Create a custom theme to style the entire app.
+ * Montserrat is used for a modern, stylish look.
+ */
+let customTheme = createTheme({
+  typography: {
+    fontFamily: 'Montserrat, sans-serif',
+  },
+  palette: {
+    primary: {
+      main: '#222', // Dark gray/charcoal
+    },
+    secondary: {
+      main: '#ff6500', // Accent color (orange)
+    },
+  },
+});
+customTheme = responsiveFontSizes(customTheme);
+
+function MainApp() {
+  const { cart } = useCart();
+  const navigate = useNavigate();
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+  const [searchTerm, setSearchTerm] = useState('');
+  const [mobileOpen, setMobileOpen] = useState(false);
+
+  // Provide suggestions when more than 2 characters are typed
+  const suggestions =
+    searchTerm.length > 2
+      ? ['Gaming PC', 'PC Parts', 'Prebuilt PC', 'Gaming Accessories']
+      : [];
+
+  const handleDrawerToggle = () => {
+    setMobileOpen(!mobileOpen);
+  };
+
+  const executeSearch = (term) => {
+    if (term.trim()) {
+      navigate(`/search?q=${term.trim()}`);
+      setSearchTerm('');
+    }
+  };
+
+  const productSections = [
+    {
+      title: "Build Your Own Custom PC",
+      description: "Select and customize your own gaming PC from scratch.",
+      image: "build_your_PC.jpg",
+      path: "/build-your-own-pc",
+    },
+    {
+      title: "Buy Gaming PC Parts",
+      description: "Choose from a wide range of components to upgrade your gaming rig.",
+      image: "gaming_PC_parts.jpg",
+      path: "/buy-gaming-pc-parts",
+    },
+    {
+      title: "Buy Pre-Built PC",
+      description: "Browse and purchase pre-built gaming PCs tailored to your needs.",
+      image: "custom_built_pc.jpg",
+      path: "/buy-custom-built-pc",
+    },
+    {
+      title: "Buy Gaming PC Accessories",
+      description: "Explore accessories to enhance your gaming experience.",
+      image: "gaming_PC_accessories.jpg",
+      path: "/gaming-pc-accessories",
+    },
+  ];
+
+  // Mobile drawer navigation (includes Cart label for clarity on mobile)
+  const drawer = (
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
+      <Typography variant="h6" sx={{ my: 2, fontWeight: 600 }}>
+        Menu
+      </Typography>
+      <List>
+        <ListItem button component={Link} to="/json-uploader">
+          <ListItemIcon>
+            <AccountCircle />
+          </ListItemIcon>
+          <ListItemText primary="JSON Uploader" />
+        </ListItem>
+        <ListItem button component={Link} to="/contact-us">
+          <ListItemIcon>
+            <ContactIcon />
+          </ListItemIcon>
+          <ListItemText primary="Contact Us" />
+        </ListItem>
+        {/* Keep "Cart" label in mobile drawer */}
+        <ListItem button component={Link} to="/cart">
+          <ListItemIcon>
+            <Badge badgeContent={cart.length} color="error">
+              <ShoppingCartIcon />
+            </Badge>
+          </ListItemIcon>
+          <ListItemText primary="Cart" />
+        </ListItem>
+      </List>
+    </Box>
+  );
+
+  return (
+    <Box
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        minHeight: '100vh',
+        backgroundImage: "url('/gaming_PC.jpg')",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}
+    >
+      {/* Header / AppBar with glass effect */}
+      <AppBar
+        position="static"
+        sx={{
+          backgroundColor: 'rgba(34,34,34,0.75)',  // Slightly transparent dark
+          backdropFilter: 'blur(6px)',             // Glass-like blur
+          boxShadow: 'none',                       // Remove default shadow
+          py: 1,
+        }}
+      >
+        <Container maxWidth="xl">
+          <Toolbar sx={{ justifyContent: 'space-between' }}>
+            {/* Mobile menu icon */}
+            {isMobile && (
+              <IconButton color="inherit" edge="start" onClick={handleDrawerToggle}>
+                <MenuIcon />
+              </IconButton>
+            )}
+
+            {/* Logo + Title */}
+            <Box sx={{ display: 'flex', alignItems: 'center', flexGrow: 1 }}>
+              <Link to="/" style={{ textDecoration: 'none' }}>
+                <Box
+                  component="img"
+                  src="/123.jpg"
+                  alt="Logo"
+                  sx={{ height: 60, mr: 2 }}
+                />
+              </Link>
+              {!isMobile && (
+                <Typography
+                  variant="h5"
+                  component={Link}
+                  to="/"
+                  sx={{
+                    textDecoration: 'none',
+                    color: 'white',
+                    fontWeight: 600,
+                    letterSpacing: '0.5px',
+                  }}
+                >
+                  BuildYourOwnPC
+                </Typography>
+              )}
+            </Box>
+
+            {/* Search Bar */}
+            <Box sx={{ flexGrow: 2, mx: 2, width: isMobile ? '100%' : '600px' }}>
+              <Autocomplete
+                freeSolo
+                options={suggestions}
+                inputValue={searchTerm}
+                onInputChange={(event, newInputValue) => setSearchTerm(newInputValue)}
+                onChange={(event, newValue) => {
+                  if (newValue) executeSearch(newValue);
+                }}
+                renderInput={(params) => (
+                  <TextField
+                    {...params}
+                    variant="outlined"
+                    placeholder="Search products..."
+                    size="small"
+                    InputProps={{
+                      ...params.InputProps,
+                      startAdornment: (
+                        <InputAdornment position="start">
+                          <SearchIcon sx={{ color: 'gray' }} />
+                        </InputAdornment>
+                      ),
+                      endAdornment: (
+                        <Button
+                          variant="contained"
+                          onClick={() => executeSearch(searchTerm)}
+                          sx={{
+                            background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+                            borderRadius: '20px',
+                            padding: '6px 16px',
+                            color: 'white',
+                            textTransform: 'none',
+                            boxShadow: 'none',
+                            fontWeight: 600,
+                            '&:hover': {
+                              background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+                              boxShadow: 'none',
+                            },
+                          }}
+                        >
+                          Search
+                        </Button>
+                      ),
+                    }}
+                    sx={{
+                      backgroundColor: 'rgba(255,255,255,0.2)',
+                      borderRadius: '8px',
+                      '& .MuiOutlinedInput-notchedOutline': { border: 'none' },
+                      width: '100%',
+                      color: 'white',
+                      // Use a lighter placeholder color
+                      '&::placeholder': {
+                        color: 'rgba(255,255,255,0.8)',
+                      },
+                    }}
+                  />
+                )}
+              />
+            </Box>
+
+            {/* Right-side Buttons (Desktop Only) */}
+            {!isMobile && (
+              <Box sx={{ display: 'flex', gap: 2, alignItems: 'center' }}>
+                <Button
+                  component={Link}
+                  to="/json-uploader"
+                  color="inherit"
+                  startIcon={<AccountCircle />}
+                  sx={{
+                    fontWeight: 500,
+                    letterSpacing: '0.3px',
+                  }}
+                >
+                  JSON Uploader
+                </Button>
+                <Button
+                  component={Link}
+                  to="/contact-us"
+                  color="inherit"
+                  startIcon={<ContactIcon />}
+                  sx={{
+                    fontWeight: 500,
+                    letterSpacing: '0.3px',
+                  }}
+                >
+                  Contact Us
+                </Button>
+                {/* Cart Icon Only, with badge */}
+                <IconButton
+                  component={Link}
+                  to="/cart"
+                  color="inherit"
+                  sx={{
+                    fontWeight: 500,
+                    letterSpacing: '0.3px',
+                  }}
+                >
+                  <Badge badgeContent={cart.length} color="error">
+                    <ShoppingCartIcon />
+                  </Badge>
+                </IconButton>
+              </Box>
+            )}
+          </Toolbar>
+        </Container>
+      </AppBar>
+
+      {/* Drawer for Mobile */}
+      <Box component="nav">
+        <Drawer
+          variant="temporary"
+          open={mobileOpen}
+          onClose={handleDrawerToggle}
+          ModalProps={{ keepMounted: true }}
+          sx={{
+            display: { xs: 'block', md: 'none' },
+            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: 240 },
+          }}
+        >
+          {drawer}
+        </Drawer>
+      </Box>
+
+      {/* Main content container */}
+      <Box sx={{ flexGrow: 1 }}>
+        <Container maxWidth="xl" sx={{ py: 4 }}>
+          <Grid container spacing={4}>
+            {productSections.map((section, index) => (
+              <Grid item xs={12} md={6} lg={3} key={index}>
+                <Paper
+                  component={Link}
+                  to={section.path}
+                  sx={{
+                    p: 2,
+                    height: 350,
+                    position: 'relative',
+                    overflow: 'hidden',
+                    background: `linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.5)), url(${section.image})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'flex-end',
+                    textDecoration: 'none',
+                    transition: 'transform 0.3s',
+                    '&:hover': {
+                      transform: 'scale(1.05)',
+                      boxShadow: '0 8px 16px rgba(0,0,0,0.2)',
+                    },
+                    '&:after': {
+                      content: '""',
+                      position: 'absolute',
+                      top: 0,
+                      left: 0,
+                      width: '100%',
+                      height: '100%',
+                      background: 'linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 60%)',
+                      opacity: 0.2,
+                      pointerEvents: 'none',
+                      zIndex: 0,
+                    },
+                  }}
+                >
+                  <Box sx={{ position: 'relative', zIndex: 1 }}>
+                    <Typography
+                      variant="h6"
+                      sx={{
+                        color: 'white',
+                        fontWeight: 600,
+                        mb: 1,
+                        textShadow: '2px 2px 4px rgba(0,0,0,0.5)',
+                      }}
+                    >
+                      {section.title}
+                    </Typography>
+                    <Typography
+                      variant="body2"
+                      sx={{
+                        color: 'white',
+                        textShadow: '1px 1px 2px rgba(0,0,0,0.5)',
+                      }}
+                    >
+                      {section.description}
+                    </Typography>
+                  </Box>
+                </Paper>
+              </Grid>
+            ))}
+          </Grid>
+        </Container>
+      </Box>
+
+      {/* Footer always at the bottom */}
+      <Box
+      component="footer"
+      sx={{
+        backgroundColor: 'rgba(34,34,34,0.75)', // Same semi-transparent dark as header
+        backdropFilter: 'blur(6px)',            // Glass-like blur
+        boxShadow: 'none',                      // Remove default shadow
+        color: 'white',
+        py: 1,                                  // Smaller vertical padding
+        mt: 'auto',
+        textAlign: 'center',
+      }}
+    >
+      <Typography
+        variant="body2"
+        sx={{
+          fontFamily: 'Montserrat, sans-serif', // Same font as header
+          letterSpacing: '0.5px',               // Slight letter spacing
+        }}
+      >
+        &copy; {new Date().getFullYear()} buildyourownpc.ggs Inc. All Rights Reserved
+      </Typography>
+    </Box>
+    </Box>
+  );
+}
+
+function RootApp() {
+  return (
+    <ThemeProvider theme={customTheme}>
+      <CssBaseline />
+      <CartProvider>
+        <Router>
+          <Routes>
+            <Route path="/" element={<MainApp />} />
+            <Route path="/build-your-own-pc" element={<BuildYourOwnPC />} />
+            <Route path="/buy-custom-built-pc" element={<BuyPreBuiltPC />} />
+            <Route path="/buy-gaming-pc-parts" element={<BuyGamingPCParts />} />
+            <Route path="/gaming-pc-accessories" element={<GamingPCAccessories />} />
+            <Route path="/cart" element={<CartPage />} />
+            <Route path="/search" element={<Search />} />
+            <Route path="/contact-us" element={<ContactUs />} />
+            <Route path="/json-uploader" element={<JsonUploader />} />
+          </Routes>
+        </Router>
+      </CartProvider>
+    </ThemeProvider>
+  );
+}
+
+export default RootApp;

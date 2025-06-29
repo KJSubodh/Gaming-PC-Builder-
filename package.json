@@ -3,21 +3,41 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@emotion/react": "^11.11.4",
-    "@emotion/styled": "^11.11.5",
-    "@mui/material": "^5.15.19",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@fontsource/poppins": "^5.2.5",
+    "@fontsource/roboto": "^5.2.5",
+    "@mui/icons-material": "^5.16.14",
+    "@mui/material": "^5.16.14",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "assert": "^2.1.0",
+    "axios": "^1.8.1",
     "bootstrap": "^5.3.3",
+    "browserify-zlib": "^0.2.0",
+    "cors": "^2.8.5",
+    "framer-motion": "^12.6.5",
+    "fuse.js": "^7.1.0",
+    "gamingpcstore": "file:",
+    "html2pdf.js": "^0.10.2",
+    "https-browserify": "^1.0.0",
+    "multer": "^1.4.5-lts.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-icons": "^5.5.0",
     "react-router-dom": "^6.23.1",
     "react-scripts": "5.0.1",
     "react-select": "^5.8.0",
     "react-slick": "^0.30.2",
     "slick-carousel": "^1.8.1",
-    "web-vitals": "^2.1.4"
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "styled-components": "^6.1.15",
+    "url": "^0.11.4",
+    "util": "^0.12.5",
+    "web-vitals": "^2.1.4",
+    "zustand": "^5.0.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -42,5 +62,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "postcss-cli": "^11.0.0"
   }
 }

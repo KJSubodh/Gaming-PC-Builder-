@@ -1,0 +1,242 @@
+{
+  "NVMe PCIe M.2 (Primary Storage)": [
+    {
+      "Name": "Samsung 980 Pro (1TB)",
+      "Price (INR)": "17500",
+      "urls": [
+        "https://m.media-amazon.com/images/I/71bvF9MNa4S._AC_UF1000,1000_QL80_.jpg",
+        "https://images.fonearena.com/blog/wp-content/uploads/2021/02/samsung-980Pro-SSD-fonearena_8.jpg"
+      ]
+    },
+    {
+      "Name": "WD Black SN850x (1TB)",
+      "Price (INR)": "9,499",
+      "urls": [
+        "https://m.media-amazon.com/images/I/61KeSQhDm4L._SX679_.jpg"
+      ]
+    },
+    {
+      "Name": "Crucial P5 Plus (1TB)",
+      "Price (INR)": "12000",
+      "urls": [
+        "https://m.media-amazon.com/images/I/41QZYbLcLSL._SX522_.jpg"
+      ]
+    },
+    {
+      "Name": "Seagate FireCuda 530 (500GB)",
+      "Price (INR)": "11500",
+      "urls": [
+        "https://m.media-amazon.com/images/I/41S94+IcbrL._SX679_.jpg"
+      ]
+    },
+    {
+      "Name": "Gigabyte Aorus Gen4 7000s (1TB)",
+      "Price (INR)": "11,999",
+      "urls": [
+        "https://www.primeabgb.com/wp-content/uploads/2023/10/GP-AG70S1TB-1.jpg"
+      ]
+    },
+    {
+      "Name": "ADATA XPG Gammix S70 Blade (1TB)",
+      "Price (INR)": "14500",
+      "urls": [
+        "https://m.media-amazon.com/images/I/61qeRmGZgtL._SX679_.jpg"
+      ]
+    },
+    {
+      "Name": "Kingston KC3000 PCIe NVMe M.2 SSD (1TB)",
+      "Price (INR)": "11,999",
+      "urls": [
+        "https://m.media-amazon.com/images/I/61pz6mN3ghL._SX522_.jpg"
+      ]
+    },
+    {
+      "Name": "Samsung 970 EVO Plus (500GB)",
+      "Price (INR)": "7500",
+      "urls": [
+        "https://images.samsung.com/is/image/samsung/in-970-evoplus-nvme-m2-ssd-mz-v7s500bw-frontblack-142279066?$684_547_PNG$"
+      ]
+    },
+    {
+      "Name": "WD Blue SN570 (500GB)",
+      "Price (INR)": "6800",
+      "urls": [
+        "https://m.media-amazon.com/images/I/516BOtvZeUL._SX679_.jpg"
+      ]
+    },
+    {
+      "Name": "Crucial P2 (500GB)",
+      "Price (INR)": "5500",
+      "urls": [
+        "https://static1.industrybuying.com/products/it-electronics/storage-devices/solid-state-drive/ITE.SOL.27799794_1673513694979.webp"
+      ]
+    },
+    {
+      "Name": "Crucial P3 Plus 1TB PCIe 4.0 3D NAND NVMe M.2 SSD",
+      "Price (INR)": "5,160",
+      "urls": [
+        "/uploads/1740848667181-Crucial P3 Plus 1TB PCIe 4.0 3D NAND NVMe M.2 SSD.jpg"
+      ]
+    }
+  ],
+  "SATA III SSD (Secondary Storage)": [
+    {
+      "Name": "Crucial BX500 (1TB)",
+      "Price (INR)": "10000",
+      "urls": [
+        "https://5.imimg.com/data5/SELLER/Default/2022/10/ZV/JI/PM/120030640/61isgtwaiel-sl1280--500x500.jpg",
+        "https://m.media-amazon.com/images/I/51zhuXxYuRL._AC_UF1000,1000_QL80_.jpg"
+      ]
+    },
+    {
+      "Name": "Samsung 870 QVO (1TB)",
+      "Price (INR)": "7200",
+      "urls": [
+        "https://images.samsung.com/is/image/samsung/in-870-qvo-sata-3-2-5-ssd-mz-77q1t0bw-backblack-270867762?$684_547_JPG$"
+      ]
+    },
+    {
+      "Name": "WD Blue 3D NAND (500GB)",
+      "Price (INR)": "3500",
+      "urls": [
+        "https://www.westerndigital.com/content/dam/store/en-us/assets/products/internal-storage/wd-blue-3d-nand-sata-ssd/gallery/250gb/wd-blue-3d-nand-sata-ssd-250gb-front.png.wdthumb.1280.1280.webp"
+      ]
+    },
+    {
+      "Name": "Kingston A400 (240GB)",
+      "Price (INR)": "1800",
+      "urls": [
+        "https://m.media-amazon.com/images/I/71JLh+nx3bL._SX679_.jpg"
+      ]
+    },
+    {
+      "Name": "ADATA Ultimate SU650 (512GB)",
+      "Price (INR)": "3200",
+      "urls": [
+        "https://m.media-amazon.com/images/I/610novg9tbL._SX679_.jpg"
+      ]
+    },
+    {
+      "Name": "Seagate BarraCuda (1TB)",
+      "Price (INR)": "5800",
+      "urls": [
+        "https://m.media-amazon.com/images/I/71eQKDCytJL._SX679_.jpg"
+      ]
+    },
+    {
+      "Name": "Silicon Power A55 (1TB)",
+      "Price (INR)": "4,819",
+      "urls": [
+        "https://www.silicon-power.com/images/product/apple/669/A55_front_1TB.jpg"
+      ]
+    },
+    {
+      "Name": "Team Group GX2 (1TB)",
+      "Price (INR)": "7,986",
+      "urls": [
+        "https://images.teamgroupinc.com/products/ssd/internal/gx2/01.jpg"
+      ]
+    },
+    {
+      "Name": "Transcend SSD370S (1TB)",
+      "Price (INR)": "6500",
+      "urls": [
+        "https://m.media-amazon.com/images/I/71VgdDFAZ3L.jpg"
+      ]
+    },
+    {
+      "Name": "WD Red SA500 NAS 4TB",
+      "Price (INR)": "33,313",
+      "urls": [
+        "https://m.media-amazon.com/images/I/712jS0PjAdL._AC_SX425_.jpg"
+      ]
+    },
+    {
+      "Name": "Western Digital WD Green SATA 1TB",
+      "Price (INR)": "5,299",
+      "urls": [
+        "/uploads/1740848977053-Western Digital WD Green SATA 1TB.jpg"
+      ]
+    }
+  ],
+  "HDD (Secondary Storage)": [
+    {
+      "Name": "Seagate Barracuda (1TB)",
+      "Price (INR)": "3200",
+      "urls": [
+        "https://www.seagate.com/content/dam/seagate/migrated-assets/www-content/products/hard-drives/barracuda-hard-drive/_shared/images/barracuda-3-5-1tb-hero-left-400x400.png",
+        "https://computerspace.in/cdn/shop/products/NewProject-2021-06-19T134636.072.jpg?v=1629049832"
+      ]
+    },
+    {
+      "Name": "Western Digital Blue (2TB)",
+      "Price (INR)": "4500",
+      "urls": [
+        "https://example.com/westerndigitalblueHDD.jpg"
+      ]
+    },
+    {
+      "Name": "Toshiba P300 (4TB)",
+      "Price (INR)": "6800",
+      "urls": [
+        "https://example.com/toshibap300HDD.jpg"
+      ]
+    },
+    {
+      "Name": "HGST Deskstar NAS (4TB)",
+      "Price (INR)": "7200",
+      "urls": [
+        "https://example.com/hgstdeskstarHDD.jpg"
+      ]
+    },
+    {
+      "Name": "WD Red Plus (4TB)",
+      "Price (INR)": "7500",
+      "urls": [
+        "https://example.com/wdredplusHDD.jpg"
+      ]
+    },
+    {
+      "Name": "Seagate IronWolf (6TB)",
+      "Price (INR)": "9000",
+      "urls": [
+        "https://example.com/seagateironwolfHDD.jpg"
+      ]
+    },
+    {
+      "Name": "Toshiba N300 NAS (4TB)",
+      "Price (INR)": "7000",
+      "urls": [
+        "https://example.com/toshiban300HDD.jpg"
+      ]
+    },
+    {
+      "Name": "Western Digital Black (4TB)",
+      "Price (INR)": "8200",
+      "urls": [
+        "https://example.com/westerndigitalblackHDD.jpg"
+      ]
+    },
+    {
+      "Name": "Seagate SkyHawk (4TB)",
+      "Price (INR)": "7800",
+      "urls": [
+        "https://example.com/seagateskyhawkHDD.jpg"
+      ]
+    },
+    {
+      "Name": "Fujitsu Deskstar Eco (4TB)",
+      "Price (INR)": "6200",
+      "urls": [
+        "https://example.com/fujitsudeskstarHDD.jpg"
+      ]
+    },
+    {
+      "Name": "Seagate Skyhawk 2 TB Surveillance",
+      "Price (INR)": "5,682",
+      "urls": [
+        "/uploads/1740849059916-Seagate Skyhawk 2 TB Surveillance.jpg"
+      ]
+    }
+  ]
+}

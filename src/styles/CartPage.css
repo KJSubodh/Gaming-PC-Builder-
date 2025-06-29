@@ -1,0 +1,211 @@
+/* 🌟 General Cart Page Styling */
+.cart-page {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  font-family: 'Poppins', sans-serif;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  color: black;
+  text-align: center;
+}
+
+/* 🛒 Cart Title & Subtitles */
+.cart-page h1, .cart-page h3 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* 🛍️ Empty Cart Message */
+.cart-page p {
+  font-size: 18px;
+  color: lightgray;
+  text-align: center;
+}
+
+/* 📦 Cart List Styling */
+.cart-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* 📦 Cart List Styling */
+.cart-list2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px;
+  background: #f9f9f9;  /* Solid light gray background */
+  border: 1px solid #ccc; /* Subtle border */
+  border-radius: 8px;
+  margin: 10px 0;
+  transition: background 0.3s ease-in-out;
+  text-align: left;
+  font-weight: bold;
+}
+
+.cart-list2:hover {
+  background: #eaeaea; /* Slightly darker on hover */
+}
+
+/* 🗑️ Remove Item Button - Optimized Size */
+.cart-list2 button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 8px 10px; /* Reduced padding for a smaller size */
+  cursor: pointer;
+  border-radius: 5px; /* Slightly rounded corners */
+  font-weight: bold;
+  font-size: 14px; /* Slightly smaller font */
+  display: flex;
+  align-items: center;
+  gap: 6px; /* Keeps text & icon neatly spaced */
+  transition: background-color 0.3s ease, transform 0.15s ease;
+  min-width: 100px; /* Slightly shorter width */
+  justify-content: center; /* Centers text/icon properly */
+}
+
+.cart-list2 button:hover {
+  background-color: darkred;
+  transform: scale(1.05); /* Slight hover effect */
+}
+
+/* ❌ Clear Cart Button */
+.clear-cart-btn {
+  background: linear-gradient(135deg, darkred, maroon);
+  padding: 16px 30px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 60%;
+  text-align: center;
+  border: none;
+  margin-top: 20px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.clear-cart-btn:hover {
+  background: linear-gradient(135deg, #a71d2a, #780c1b);
+  transform: scale(1.05);
+}
+
+/* 💳 Checkout Button */
+.checkout-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.checkout-container .checkout {
+  background: #28a745;
+  color: white;
+  font-size: 18px;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.checkout-container .checkout:hover {
+  background: #218838;
+  transform: scale(1.08);
+}
+
+/* 📝 User Details Section */
+.user-details {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 25px;
+  padding: 18px;
+  background: rgba(245, 245, 245, 0.85);
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+
+.user-details h2 {
+  color: #222;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.user-details input {
+  padding: 14px;
+  border: 1px solid rgba(180, 180, 180, 0.7);
+  border-radius: 8px;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.7);
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.user-details input:focus {
+  border-color: #007bff;
+  background: white;
+  outline: none;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .cart-page {
+    max-width: 90%;
+    padding: 22px;
+  }
+
+  .cart-page h1 {
+    font-size: 24px;
+  }
+
+  .cart-list2 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-page button {
+    width: 100%;
+    margin-top: 6px;
+  }
+
+  .user-details {
+    padding: 12px;
+  }
+
+  .clear-cart-btn {
+    width: 100%;
+  }
+}
+
+/* 💰 Compact & Adjustable Total Price Styling */
+.total-price {
+  font-size: 18px; /* Balanced font size */
+  font-weight: 500; /* Medium weight for clean look */
+  color: #ffffff; /* White text for contrast */
+  text-align: center;
+  background: linear-gradient(135deg, green, darkgreen); /* Gradient for a premium feel */
+  padding: 8px 20px; /* Adjusted padding for better width */
+  border-radius: 6px; /* Soft edges */
+  border: 1px solid brown; /* Subtle border */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  letter-spacing: 0.3px; /* Minimal spacing */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px auto; /* Centers it properly */
+  width: 400px; /* Adjusted width for perfect alignment */
+  max-width: 90%; /* Ensures it doesn't get too wide */
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+/* 💰 Hover Effect - Subtle & Clean */
+.total-price:hover {
+  background: linear-gradient(135deg, green, cyan);
+  transform: scale(1.02); /* Tiny hover effect */
+}
+

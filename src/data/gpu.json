@@ -1,0 +1,257 @@
+[
+  {
+    "name": "NVIDIA GeForce RTX 4090",
+    "specs": {
+      "VRAM": "24GB GDDR6X",
+      "Key Specifications": "Powerful, future-proof, excellent for 4K gaming"
+    },
+    "features": [
+      "Ray Tracing",
+      "DLSS"
+    ],
+    "pricing (INR)": 125550,
+    "urls": [
+      "https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ada/rtx-4090/geforce-ada-4090-web-og-1200x630.jpg",
+      "https://m.media-amazon.com/images/I/51c1zFDNVmL.jpg"
+    ]
+  },
+  {
+    "name": "AMD Radeon RX 7900 XT",
+    "specs": {
+      "VRAM": "24GB GDDR6",
+      "Key Specifications": "Strong contender for high-end performance"
+    },
+    "features": [
+      "Ray Tracing",
+      "FSR"
+    ],
+    "pricing (INR)": 100440,
+    "urls": [
+      "https://images.anandtech.com/doci/17638/Radeon_RX_7900_XTX_Car_678x452.jpg",
+      "https://www.pcworld.com/wp-content/uploads/2023/04/AMD-RDNA-3-Radeon-RX-7900-XTX-4-1.jpg?quality=50&strip=all"
+    ]
+  },
+  {
+    "name": "NVIDIA GeForce RTX 4080",
+    "specs": {
+      "VRAM": "16GB GDDR6X",
+      "Key Specifications": "Excellent for high-resolution and high refresh rate gaming"
+    },
+    "features": [
+      "Ray Tracing",
+      "DLSS"
+    ],
+    "pricing (INR)": 91707,
+    "urls": [
+      "https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ada/rtx-4080/geforce-ada-4080-og-1200x630.jpg",
+      "https://assets-prd.ignimgs.com/2022/11/14/pxl-20221114-204616329-portrait-1668461745544.jpg"
+    ]
+  },
+  {
+    "name": "AMD Radeon RX 7800 XT",
+    "specs": {
+      "VRAM": "16GB GDDR6",
+      "Key Specifications": "Powerful option for enthusiast gamers"
+    },
+    "features": [
+      "Ray Tracing",
+      "FSR"
+    ],
+    "pricing (INR)": 66696,
+    "urls": [
+      "https://sm.ign.com/ign_in/cover/a/amd-radeon/amd-radeon-rx-7800-xt_bw98.jpg",
+      "https://www.notebookcheck.net/fileadmin/Notebooks/AMD/RX_7000_Series/RX_7800_XT/RX_7800_XT_38.jpg"
+    ]
+  },
+  {
+    "name": "NVIDIA GeForce RTX 3080",
+    "specs": {
+      "VRAM": "10GB GDDR6X",
+      "Key Specifications": "Still a strong performer for mid-range builds"
+    },
+    "features": [
+      "Ray Tracing",
+      "DLSS"
+    ],
+    "pricing (INR)": 58395
+  },
+  {
+    "name": "AMD Radeon RX 6700 XT",
+    "specs": {
+      "VRAM": "12GB GDDR6",
+      "Key Specifications": "Ideal for high frame rates at 1440p"
+    },
+    "features": [
+      "Ray Tracing",
+      "FSR"
+    ],
+    "pricing (INR)": 45818
+  },
+  {
+    "name": "NVIDIA GeForce RTX 3070",
+    "specs": {
+      "VRAM": "8GB GDDR6X",
+      "Key Specifications": "Capable 1440p gaming option"
+    },
+    "features": [
+      "Ray Tracing",
+      "DLSS"
+    ],
+    "pricing (INR)": 41685
+  },
+  {
+    "name": "AMD Radeon RX 6650 XT",
+    "specs": {
+      "VRAM": "8GB GDDR6",
+      "Key Specifications": "Good value for 1080p high refresh rate gaming"
+    },
+    "features": [
+      "Ray Tracing",
+      "FSR"
+    ],
+    "pricing (INR)": 33340
+  },
+  {
+    "name": "NVIDIA GeForce RTX 3060 Ti",
+    "specs": {
+      "VRAM": "8GB GDDR6",
+      "Key Specifications": "Reliable option for 1080p gaming"
+    },
+    "features": [
+      "Ray Tracing",
+      "DLSS"
+    ],
+    "pricing (INR)": 33340
+  },
+  {
+    "name": "AMD Radeon RX 6600 XT",
+    "specs": {
+      "VRAM": "8GB GDDR6",
+      "Key Specifications": "Budget-conscious choice for 1080p performance"
+    },
+    "features": [
+      "Ray Tracing",
+      "FSR"
+    ],
+    "pricing (INR)": 29107
+  },
+  {
+    "name": "NVIDIA GeForce GTX 1650",
+    "specs": {
+      "VRAM": "4GB GDDR6",
+      "Key Specifications": "Entry-level option for basic 1080p gaming"
+    },
+    "features": [
+      "Ray Tracing"
+    ],
+    "pricing (INR)": 16674
+  },
+  {
+    "name": "AMD Radeon RX 6400",
+    "specs": {
+      "VRAM": "4GB GDDR6",
+      "Key Specifications": "Affordable option for esports and older games"
+    },
+    "features": [
+      "FSR"
+    ],
+    "pricing (INR)": 12555
+  },
+  {
+    "name": "NVIDIA GeForce RTX 3090 Ti",
+    "specs": {
+      "VRAM": "24GB GDDR6X",
+      "Key Specifications": "Most powerful consumer GPU, for extreme enthusiasts"
+    },
+    "features": [
+      "Ray Tracing",
+      "DLSS"
+    ],
+    "pricing (INR)": 150660
+  },
+  {
+    "name": "AMD Radeon RX 6900 XT",
+    "specs": {
+      "VRAM": "16GB GDDR6",
+      "Key Specifications": "Powerful option with high memory capacity"
+    },
+    "features": [
+      "Ray Tracing",
+      "FSR"
+    ],
+    "pricing (INR)": 83370
+  },
+  {
+    "name": "NVIDIA GeForce RTX 4080 Ti",
+    "specs": {
+      "VRAM": "16GB GDDR6X",
+      "Key Specifications": "Powerful for gaming and demanding creative workflows"
+    },
+    "features": [
+      "Ray Tracing",
+      "DLSS"
+    ],
+    "pricing (INR)": 108417
+  },
+  {
+    "name": "AMD Radeon RX 7800 XT LC (Liquid Cooled)",
+    "specs": {
+      "VRAM": "16GB GDDR6",
+      "Key Specifications": "Excellent cooling for sustained workloads"
+    },
+    "features": [
+      "Ray Tracing",
+      "FSR"
+    ],
+    "pricing (INR)": 75012
+  },
+  {
+    "name": "NVIDIA GeForce RTX 4070 MASTER 12G",
+    "specs": {
+      "VRAM": "12GB GDDR6X",
+      "Key Specifications": "Successor to RTX 3070, expected for mid-range performance"
+    },
+    "features": [
+      "Ray Tracing",
+      "DLSS"
+    ],
+    "pricing (INR)": 75445
+  },
+  {
+    "name": "AMD Radeon RX 7700 XT",
+    "specs": {
+      "VRAM": "12GB GDDR6",
+      "Key Specifications": "Successor to RX 6700 XT, expected for 1440p gaming"
+    },
+    "features": [
+      "Ray Tracing",
+      "FSR"
+    ],
+    "pricing (INR)": 45861
+  },
+  {
+    "name": "NVIDIA GeForce GTX 1660 Super",
+    "specs": {
+      "VRAM": "6GB GDDR6",
+      "Key Specifications": "Viable option for budget-minded gamers looking for decent 1080p performance, especially in older titles"
+    },
+    "features": [
+      "Ray Tracing"
+    ],
+    "pricing (INR)": 20842
+  },
+  {
+    "name": "AMD Radeon RX 5700 XT",
+    "specs": {
+      "VRAM": "8GB GDDR6",
+      "Key Specifications": "Previously considered high-end, now provides excellent value for 1080p gaming."
+    },
+    "pricing (INR)": 59999
+  },
+  {
+    "name": "MSI GeForce RTX 5080",
+    "specs": "16GB GDDR7 256-bit Memory, 30 Gbps, PCI Express Gen 5 Interface",
+    "features": "2640 MHz, TORX Fan 5.0",
+    "pricing (INR)": "1,94,799"
+  }
+]

@@ -1,0 +1,184 @@
+[
+  {
+    "name": "G.Skill Trident Z5 RGB DDR5-6400 CL36 32GB Kit (2x16GB)",
+    "pricing": "$400",
+    "GB": 32,
+    "speed": 6400,
+    "LP": false,
+    "pricing (INR)": "33370.00",
+    "urls": [
+      "https://www.gskill.com/_upload/images/2110201626450.png",
+      "https://www.club386.com/wp-content/uploads/2023/08/G.Skill-Trident-Z5-Neo-RGB-DDR5-memory-for-AM5.jpg"
+    ]
+  },
+  {
+    "name": "Corsair Dominator Platinum RGB DDR4-5200 CL40 32GB Kit (2x16GB)",
+    "pricing": "$350",
+    "GB": 32,
+    "speed": 5200,
+    "LP": false,
+    "pricing (INR)": "29158.95",
+    "urls": [
+      "https://m.media-amazon.com/images/I/71WjY9LoM+L.jpg",
+      "https://m.media-amazon.com/images/I/61Ry4NxmHRL.jpg"
+    ]
+  },
+  {
+    "name": "Crucial Ballistix Max RGB DDR4-4800 CL40 16GB Kit (2x8GB)",
+    "pricing": "$200",
+    "GB": 16,
+    "speed": 4800,
+    "LP": false,
+    "pricing (INR)": "16698.61",
+    "urls": [
+      "https://www.crucial.in/content/dam/crucial/dram-products/ballistix-max-udimm/images/product/crucial-ballistix-max-and-rgb-offset-stacked-front-flat-image.psd.transform/large-png/img.png",
+      "https://m.media-amazon.com/images/I/61CvySf5IsL._AC_UF1000,1000_QL80_.jpg"
+    ]
+  },
+  {
+    "name": "TeamGroup Dark Pro DDR4-4400 CL19 32GB Kit (4x8GB)",
+    "pricing": "$250",
+    "GB": 32,
+    "speed": 4400,
+    "LP": true,
+    "pricing (INR)": "20872.92"
+  },
+  {
+    "name": "G.Skill Ripjaws V DDR4-3600 CL16 16GB Kit (2x8GB)",
+    "pricing": "$150",
+    "GB": 16,
+    "speed": 3600,
+    "LP": false,
+    "pricing (INR)": "12535.38"
+  },
+  {
+    "name": "Corsair Vengeance LPX DDR4-3200 CL16 32GB Kit (2x16GB)",
+    "pricing": "$130",
+    "GB": 32,
+    "speed": 3200,
+    "LP": true,
+    "pricing (INR)": "10845.21"
+  },
+  {
+    "name": "Patriot Viper Steel DDR4-3600 CL18 16GB Kit (2x8GB)",
+    "pricing": "$100",
+    "GB": 16,
+    "speed": 3600,
+    "LP": false,
+    "pricing (INR)": "8336.89"
+  },
+  {
+    "name": "XPG Gammix D10 DDR4-3200 CL16 8GB Kit (1x8GB)",
+    "pricing": "$60",
+    "GB": 8,
+    "speed": 3200,
+    "LP": false,
+    "pricing (INR)": "5008.49"
+  },
+  {
+    "name": "Kingston Fury Beast DDR4-3200 CL16 8GB Kit (1x8GB)",
+    "pricing": "$50",
+    "GB": 8,
+    "speed": 3200,
+    "LP": false,
+    "pricing (INR)": "4173.74"
+  },
+  {
+    "name": "Crucial Crucial Ballistix DDR4-2666 CL16 16GB Kit (2x8GB)",
+    "pricing": "$80",
+    "GB": 16,
+    "speed": 2666,
+    "LP": false,
+    "pricing (INR)": "6679.32"
+  },
+  {
+    "name": "TeamGroup T-Force Delta RGB DDR4-3000 CL16 8GB Kit (1x8GB)",
+    "pricing": "$60",
+    "GB": 8,
+    "speed": 3000,
+    "LP": false,
+    "pricing (INR)": "5008.49"
+  },
+  {
+    "name": "ADATA XPG Gammix D10 DDR4-2400 CL16 16GB Kit (2x8GB)",
+    "pricing": "$70",
+    "GB": 16,
+    "speed": 2400,
+    "LP": false,
+    "pricing (INR)": "5844.94"
+  },
+  {
+    "name": "G.Skill Trident Z5 RGB DDR4-4000 CL18 16GB Kit (2x8GB)",
+    "pricing": "$220",
+    "GB": 16,
+    "speed": 4000,
+    "LP": false,
+    "pricing (INR)": "18349.84"
+  },
+  {
+    "name": "Corsair Vengeance RGB Pro SL DDR4-3600 CL16 16GB Kit (2x8GB)",
+    "pricing": "$180",
+    "GB": 16,
+    "speed": 3600,
+    "LP": true,
+    "pricing (INR)": "15028.75"
+  },
+  {
+    "name": "Patriot Viper 4 Blackout DDR4-3733 CL17 16GB Kit (2x8GB)",
+    "pricing": "$150",
+    "GB": 16,
+    "speed": 3733,
+    "LP": false,
+    "pricing (INR)": "12535.38"
+  },
+  {
+    "name": "G.Skill Trident Z Royal DDR4-3600 CL16 32GB Kit (4x8GB)",
+    "pricing": "$280",
+    "GB": 32,
+    "speed": 3600,
+    "LP": false,
+    "pricing (INR)": "23345.83"
+  },
+  {
+    "name": "Crucial Ballistix MAX RGB DDR4-3200 CL16 64GB Kit (4x16GB)",
+    "pricing": "$400",
+    "GB": 64,
+    "speed": 3200,
+    "LP": false,
+    "pricing (INR)": "33370.00"
+  },
+  {
+    "name": "Kingston Fury Renegade DDR5-5200 CL40 16GB Kit (2x8GB)",
+    "pricing": "$300",
+    "GB": 16,
+    "speed": 5200,
+    "LP": false,
+    "pricing (INR)": "25011.30"
+  },
+  {
+    "name": "ADATA XPG Gammix D30 DDR4-3000 CL16 4GB Kit (1x4GB)",
+    "pricing": "$30",
+    "GB": 4,
+    "speed": 3000,
+    "LP": false,
+    "pricing (INR)": "2501.13"
+  },
+  {
+    "name": "Samsung Memory 8GB DDR3-1600 CL11 SODIMM (Single Stick)",
+    "pricing": "$40",
+    "GB": 8,
+    "speed": 1600,
+    "LP": true,
+    "pricing (INR)": "3334.80"
+  },
+  {
+    "name": "Corsair Dominator Platinum RGB DDR5 32GB (2x16GB)",
+    "GB": "2x16GB",
+    "speed": "7200 MHz",
+    "LP": "false",
+    "pricing (INR)": "18,921",
+    "urls": [
+      "/uploads/1740814366866-Corsair Dominator Platinum RGB DDR5 32GB (2x16GB).jpg"
+    ]
+  }
+]
