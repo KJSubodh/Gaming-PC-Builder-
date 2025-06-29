@@ -1,70 +1,62 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Gaming-PC-Builder
 
-## Available Scripts
+Hey Guys! A newbie here, trying to learn web development.
 
-In the project directory, you can run:
+Overview
 
-### `npm start`
+This is an e-commerce app made using React, HTML, and CSS ONLY (no backend yet). You can use this app to choose different parts to build your gaming PC and get the total cost in an invoice in INR (Indian Rupees).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Features
 
-### `npm test`
+Build your own gaming PC by selecting various parts.
+Buy individual gaming PC parts like GPU, CPU, Motherboard, etc.
+Purchase pre-built gaming PCs.
+Buy gaming accessories such as Mic, Earphones, Mice, Webcam, and Monitor.
+Dummy payment options (non-functional).
+Printable invoice/bill.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+Disclaimer
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This project is an attempt to understand and learn web development better. Initially, I intended to implement the backend to make it a full MERN stack application, but due to time constraints, it’s front-end only.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Clone the repository: 
+git clone https://github.com/KJSubodh/Gaming-PC-Builder-.git
 
-### `npm run eject`
+cd Gaming-PC-Builder-
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Install dependencies: 
+npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Install Babel and other dev dependencies: 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+npm install --save-dev @babel/core @babel/cli @babel/preset-env @babel/preset-react
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+npm install --save-dev webpack webpack-cli webpack-dev-server babel-loader
 
-## Learn More
+Install React and React DOM:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+npm install react react-dom
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Start the development server:
 
-### Code Splitting
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+Some Screenshots of the webapp
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![Screenshot (81)](https://github.com/KJSubodh/Gaming-PC-Builder-/assets/56197566/aaaa18f0-6766-43db-9327-90c221c43a9a)
+![Screenshot (80)](https://github.com/KJSubodh/Gaming-PC-Builder-/assets/56197566/4ed85aef-4368-45f1-810a-0b9fdbef2ac5)
+![Screenshot (78)](https://github.com/KJSubodh/Gaming-PC-Builder-/assets/56197566/92407166-3608-4737-be63-5e9c7976241b)
+![Screenshot (74)](https://github.com/KJSubodh/Gaming-PC-Builder-/assets/56197566/9089c547-0fca-42e8-bfe3-7e58d1339eda)
+![Screenshot (73)](https://github.com/KJSubodh/Gaming-PC-Builder-/assets/56197566/a1c715f3-0031-4b48-b522-3b7c64689758)
+![Screenshot (72)](https://github.com/KJSubodh/Gaming-PC-Builder-/assets/56197566/1eba1e9a-967d-4889-a8c2-f5b534975740)
+![Screenshot (71)](https://github.com/KJSubodh/Gaming-PC-Builder-/assets/56197566/589be264-0b00-44c5-ab65-896804457240)
+![Screenshot (70)](https://github.com/KJSubodh/Gaming-PC-Builder-/assets/56197566/5e4cb8f8-2142-4cba-beb7-a463cae7e9c9)
+![Screenshot (69)](https://github.com/KJSubodh/Gaming-PC-Builder-/assets/56197566/41810322-bb87-420e-96dc-e90e485b22a7)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
