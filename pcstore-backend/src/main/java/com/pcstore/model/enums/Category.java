@@ -1,0 +1,26 @@
+package com.pcstore.model.enums;
+
+public enum Category {
+    // Core components
+    CPU, GPU, MOTHERBOARD, RAM, PSU, CASE,
+    COOLING, COOLING_CPU_AIR, COOLING_CPU_LIQUID, COOLING_FAN,
+    STORAGE_NVME, STORAGE_SATA, STORAGE_HDD,
+
+    // Display
+    MONITOR,
+
+    // Peripherals
+    KEYBOARD, MOUSE, MOUSE_PAD, HEADPHONE, HEADSET,
+    CONTROLLER, GAMEPAD, DRIVING_WHEEL,
+    GAMING_CHAIR, SPEAKER, MICROPHONE, WEBCAM,
+
+    // Accessories
+    THERMAL_PASTE, CABLE_MANAGEMENT, MONITOR_ARM,
+    USB_HUB, CAPTURE_CARD, DESK_MAT,
+
+    // Power
+    UPS,
+
+    // Other
+    PREBUILT, ACCESSORY
+}
