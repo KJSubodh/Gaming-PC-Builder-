@@ -7,8 +7,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
-import java.util.Arrays;
 import java.util.Map;
+import java.util.Arrays;
 
 @RestController
 @RequestMapping("/api/products")
@@ -48,5 +48,29 @@ public class ProductController {
     @GetMapping("/latest")
     public ResponseEntity<List<ProductResponse>> getLatestProducts(@RequestParam(defaultValue = "8") int limit) {
         return ResponseEntity.ok(productService.getLatestProducts(limit));
+    }
+
+    // ============================================
+    // Socket / Series-based endpoints
+    // ============================================
+
+    @GetMapping("/cpus/by-socket")
+    public ResponseEntity<Map<String, List<ProductResponse>>> getCpusBySocket() {
+        return ResponseEntity.ok(productService.getCpusBySocket());
+    }
+
+    @GetMapping("/cpus/by-series")
+    public ResponseEntity<Map<String, List<ProductResponse>>> getCpusBySeries() {
+        return ResponseEntity.ok(productService.getCpusBySeries());
+    }
+
+    @GetMapping("/motherboards/compatible/{socket}")
+    public ResponseEntity<List<ProductResponse>> getCompatibleMotherboards(@PathVariable String socket) {
+        return ResponseEntity.ok(productService.getMotherboardsBySocket(socket));
+    }
+
+    @GetMapping("/ram/compatible/{ramType}")
+    public ResponseEntity<List<ProductResponse>> getCompatibleRam(@PathVariable String ramType) {
+        return ResponseEntity.ok(productService.getRamByType(ramType));
     }
 }

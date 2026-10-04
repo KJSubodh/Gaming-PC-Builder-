@@ -35,12 +35,12 @@ public class SecurityConfig {
                         .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll()
                         .requestMatchers(
                                 "/api/auth/**", "/api/products/**", "/api/categories",
-                                "/api/health", "/api/compatibility/**", "/uploads/**")
+                                "/api/health", "/api/compatibility/**", "/uploads/**",
+                                "/error")
                         .permitAll()
                         .requestMatchers("/api/cart/**").permitAll() // allow guest cart access
                         .requestMatchers("/api/admin/**").hasRole("ADMIN")
-                        .anyRequest().authenticated()
-                )
+                        .anyRequest().authenticated())
                 // IF_REQUIRED: Spring creates a session when needed (guest cart),
                 // but JWT users remain stateless since JwtAuthFilter runs first.
                 .sessionManagement(session -> session

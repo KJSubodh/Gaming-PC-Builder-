@@ -19,7 +19,7 @@ import Profile from './pages/Profile'
 import Orders from './pages/Orders'
 import OrderDetail from './pages/OrderDetail'
 import ContactUs from './pages/ContactUs' 
-import AboutUs from './pages/AboutUs' // <--- 1. IMPORT THE ABOUT US PAGE HERE
+import AboutUs from './pages/AboutUs'
 import AdminDashboard from './pages/admin/AdminDashboard'
 import AdminProducts from './pages/admin/AdminProducts'
 import AdminOrders from './pages/admin/AdminOrders'
@@ -34,19 +34,32 @@ function App() {
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
+        
+        {/* PC Components */}
         <Route path="products" element={<Products />} />
-        <Route path="products/:category" element={<Products />} />
+        
+        {/* Peripherals */}
+        <Route path="peripherals" element={<Peripherals />} />
+        
+        {/* Accessories */}
+        <Route path="accessories" element={<Accessories />} />
+        
+        {/* Product Detail */}
         <Route path="product/:id" element={<ProductDetail />} />
+        
+        {/* Cart & Checkout */}
         <Route path="cart" element={<Cart />} />
         <Route path="pc-builder" element={<PCBuilder />} />
         <Route path="compatibility" element={<CompatibilityCheck />} />
-        <Route path="accessories" element={<Accessories />} />
-        <Route path="peripherals" element={<Peripherals />} />
         <Route path="pre-built" element={<PreBuiltPC />} />
+        
+        {/* Auth */}
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
         <Route path="forgot-password" element={<ForgotPassword />} />
         <Route path="reset-password" element={<ResetPassword />} />
+        
+        {/* Info Pages */}
         <Route path="contact" element={<ContactUs />} />
         <Route path="about" element={<AboutUs />} />
         <Route path="services" element={<Services />} />
@@ -56,7 +69,7 @@ function App() {
           <Route path="checkout" element={<Checkout />} />
           <Route path="profile" element={<Profile />} />
           <Route path="orders" element={<Orders />} />
-          <Route path="orders/:id" element={<OrderDetail />} />
+          <Route path="orders/number/:orderNumber" element={<OrderDetail />} />
         </Route>
         
         {/* Admin Routes */}

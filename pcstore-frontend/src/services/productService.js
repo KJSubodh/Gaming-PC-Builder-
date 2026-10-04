@@ -1,3 +1,5 @@
+// productService.js - Fallback version without backend change
+
 import api from './api'
 
 export const productService = {
@@ -9,6 +11,21 @@ export const productService = {
   getProductsByCategory: async (category) => {
     const response = await api.get(`/products/category/${category}`)
     return response.data
+  },
+
+  // Get products by multiple categories using client-side filtering
+  getProductsByCategories: async (categories) => {
+    try {
+      // First try: Check if backend supports it
+      const categoriesParam = categories.join(',')
+      const response = await api.get(`/products/categories?categories=${categoriesParam}`)
+      return response.data
+    } catch (error) {
+      // Fallback: Fetch all products and filter
+      console.log('Using fallback: filtering products client-side')
+      const allProducts = await productService.getAllProducts()
+      return allProducts.filter(p => categories.includes(p.category))
+    }
   },
 
   getProductById: async (id) => {

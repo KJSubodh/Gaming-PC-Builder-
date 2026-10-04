@@ -15,18 +15,16 @@ export const CartProvider = ({ children }) => {
   const loadCart = useCallback(async () => {
     setLoading(true)
     try {
-      // REMOVED the null parameter - just pass token
-      const items = await cartService.getCart(token)
-      console.log('ITEMS RETURNED:', items)
+      const authToken = isAuthenticated ? token : null
+      const items = await cartService.getCart(authToken)
       setCartItems(Array.isArray(items) ? items : [])
-      console.log('CART STATE SET')
     } catch (error) {
       console.error('Failed to load cart:', error)
       setCartItems([])
     } finally {
       setLoading(false)
     }
-  }, [token])
+  }, [token, isAuthenticated])
 
   useEffect(() => {
     loadCart()
@@ -34,8 +32,8 @@ export const CartProvider = ({ children }) => {
 
   const addToCart = async (productId, quantity = 1) => {
     try {
-      // REMOVED the null parameter - just pass productId, quantity, token
-      await cartService.addToCart(productId, quantity, token)
+      const authToken = isAuthenticated ? token : null
+      await cartService.addToCart(productId, quantity, authToken)
       await loadCart()
       toast.success('Added to cart!')
       return true
@@ -46,9 +44,42 @@ export const CartProvider = ({ children }) => {
     }
   }
 
+  // ✅ BULK ADD — adds many items, then reloads cart ONCE
+  const addMultipleToCart = async (items) => {
+    // items = [{ productId, quantity }, ...] OR [id1, id2, id3]
+    try {
+      const authToken = isAuthenticated ? token : null
+
+      // Normalize to array of { productId, quantity }
+      const normalized = items.map(item =>
+        typeof item === 'object'
+          ? { productId: item.productId || item.id, quantity: item.quantity || 1 }
+          : { productId: item, quantity: 1 }
+      )
+
+      // Send sequentially, but only reload cart once at the end
+      for (const item of normalized) {
+        await cartService.addToCart(item.productId, item.quantity, authToken)
+      }
+
+      // ✅ Single cart reload
+      await loadCart()
+
+      toast.success(`${normalized.length} component${normalized.length !== 1 ? 's' : ''} added to cart!`)
+      return true
+    } catch (error) {
+      console.error('Bulk add error:', error)
+      toast.error('Failed to add some components to cart')
+      // Still try to reload in case some were added
+      await loadCart()
+      return false
+    }
+  }
+
   const updateQuantity = async (cartItemId, quantity) => {
     try {
-      await cartService.updateQuantity(cartItemId, quantity, token)
+      const authToken = isAuthenticated ? token : null
+      await cartService.updateQuantity(cartItemId, quantity, authToken)
       await loadCart()
       toast.success('Cart updated')
     } catch (error) {
@@ -59,7 +90,8 @@ export const CartProvider = ({ children }) => {
 
   const removeFromCart = async (cartItemId) => {
     try {
-      await cartService.removeFromCart(cartItemId, token)
+      const authToken = isAuthenticated ? token : null
+      await cartService.removeFromCart(cartItemId, authToken)
       await loadCart()
       toast.success('Removed from cart')
     } catch (error) {
@@ -70,8 +102,8 @@ export const CartProvider = ({ children }) => {
 
   const clearCart = async () => {
     try {
-      // REMOVED the null parameter
-      await cartService.clearCart(token)
+      const authToken = isAuthenticated ? token : null
+      await cartService.clearCart(authToken)
       setCartItems([])
       toast.success('Cart cleared')
     } catch (error) {
@@ -94,6 +126,7 @@ export const CartProvider = ({ children }) => {
     cartItems: Array.isArray(cartItems) ? cartItems : [],
     loading,
     addToCart,
+    addMultipleToCart,   // ✅ expose this
     updateQuantity,
     removeFromCart,
     clearCart,

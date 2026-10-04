@@ -1,43 +1,39 @@
+// cartService.js
 import api from './api'
+
+const getGuestId = () => {
+  let id = localStorage.getItem('guestId')
+  if (!id) {
+    id = crypto.randomUUID()
+    localStorage.setItem('guestId', id)
+  }
+  return id
+}
+
+const authHeaders = (token) =>
+  token
+    ? { Authorization: `Bearer ${token}` }
+    : { 'X-Guest-Id': getGuestId() }
 
 export const cartService = {
   getCart: async (token) => {
-    try {
-      const headers = token ? { Authorization: `Bearer ${token}` } : {}
-      const response = await api.get('/cart', { headers })
-      console.log('CART RAW RESPONSE:', response.data)
-      // Backend returns CartResponse { items, totalAmount, itemCount }
-      return response.data?.items || []
-    } catch (error) {
-      console.error('Error getting cart:', error)
-      return []
-    }
+    const response = await api.get('/cart', { headers: authHeaders(token) })
+    return response.data?.items || []
   },
-
   addToCart: async (productId, quantity, token) => {
-    const headers = token ? { Authorization: `Bearer ${token}` } : {}
-    const response = await api.post('/cart/add', {
-      productId,
-      quantity
-    }, { headers })
+    const response = await api.post('/cart/add', { productId, quantity }, { headers: authHeaders(token) })
     return response.data
   },
-
   updateQuantity: async (cartItemId, quantity, token) => {
-    const headers = token ? { Authorization: `Bearer ${token}` } : {}
-    const response = await api.put(`/cart/update/${cartItemId}?quantity=${quantity}`, {}, { headers })
+    const response = await api.put(`/cart/update/${cartItemId}?quantity=${quantity}`, {}, { headers: authHeaders(token) })
     return response.data
   },
-
   removeFromCart: async (cartItemId, token) => {
-    const headers = token ? { Authorization: `Bearer ${token}` } : {}
-    const response = await api.delete(`/cart/remove/${cartItemId}`, { headers })
+    const response = await api.delete(`/cart/remove/${cartItemId}`, { headers: authHeaders(token) })
     return response.data
   },
-
   clearCart: async (token) => {
-    const headers = token ? { Authorization: `Bearer ${token}` } : {}
-    const response = await api.delete('/cart/clear', { headers })
+    const response = await api.delete('/cart/clear', { headers: authHeaders(token) })
     return response.data
   }
 }

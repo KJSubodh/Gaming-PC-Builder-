@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import SpecEditor, { rowsToSpecs, specsToRows } from '../../components/SpecEditor'
 import { useParams, useNavigate } from 'react-router-dom'
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
 import { adminService } from '../../services/adminService'
@@ -39,10 +40,11 @@ const AdminProductForm = () => {
     coolingType: '',
     fanSize: '',
     rgb: 'false',
-    features: []
+    features: {}
   })
 
   const [images, setImages] = useState([])
+  const [specRows, setSpecRows] = useState([])
   const [uploading, setUploading] = useState(false)
   const [existingImages, setExistingImages] = useState([])
 
@@ -78,8 +80,9 @@ const AdminProductForm = () => {
         coolingType: existingProduct.coolingType || '',
         fanSize: existingProduct.fanSize || '',
         rgb: existingProduct.rgb || 'false',
-        features: existingProduct.features || []
+        features: existingProduct.features && !Array.isArray(existingProduct.features) ? existingProduct.features : {}
       })
+      setSpecRows(specsToRows(existingProduct.specifications))
 
       if (existingProduct.images && existingProduct.images.length > 0) {
         setExistingImages(existingProduct.images)
@@ -171,7 +174,9 @@ const AdminProductForm = () => {
       price: parseFloat(formData.price),
       stockQuantity: parseInt(formData.stockQuantity),
       fanSize: formData.fanSize ? parseInt(formData.fanSize) : null,
-      rgb: formData.rgb === 'true' || formData.rgb === 'argb'
+      rgb: formData.rgb === 'true' || formData.rgb === 'argb',
+      features: Array.isArray(formData.features) ? {} : formData.features,
+      specifications: rowsToSpecs(specRows)
     })
   }
 
@@ -541,6 +546,8 @@ const AdminProductForm = () => {
               </div>
             )}
           </div>
+
+          <SpecEditor category={formData.category} rows={specRows} onChange={setSpecRows} />
 
           {/* Form Actions */}
           <div className="mt-8 flex justify-end gap-3 pt-4 border-t border-neutral-100">

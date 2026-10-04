@@ -82,10 +82,10 @@ const Navbar = () => {
   const [openDropdown, setOpenDropdown] = useState(false)
   const [searchOpen, setSearchOpen] = useState(false)
   const [activeSubMenu, setActiveSubMenu] = useState(null)
+  const [hoverTimeout, setHoverTimeout] = useState(null)
   
   const dropdownRef = useRef(null)
   const dropdownButtonRef = useRef(null)
-  const subMenuTimeoutRef = useRef(null)
   const navigate = useNavigate()
   const location = useLocation()
 
@@ -131,17 +131,29 @@ const Navbar = () => {
     return () => document.removeEventListener('keydown', handleKey)
   }, [])
 
+  // Handle hover with delay for better UX
   const handleSubMenuEnter = (menu) => {
-    if (subMenuTimeoutRef.current) {
-      clearTimeout(subMenuTimeoutRef.current)
+    if (hoverTimeout) {
+      clearTimeout(hoverTimeout)
+      setHoverTimeout(null)
     }
     setActiveSubMenu(menu)
   }
 
   const handleSubMenuLeave = () => {
-    subMenuTimeoutRef.current = setTimeout(() => {
+    const timeout = setTimeout(() => {
       setActiveSubMenu(null)
-    }, 200)
+    }, 150)
+    setHoverTimeout(timeout)
+  }
+
+  // Handle click for mobile/touch devices
+  const handleSubMenuClick = (menu) => {
+    if (activeSubMenu === menu) {
+      setActiveSubMenu(null)
+    } else {
+      setActiveSubMenu(menu)
+    }
   }
 
   // Primary nav links (Row 1)
@@ -162,6 +174,7 @@ const Navbar = () => {
     components: {
       name: 'PC Components',
       icon: FiGrid,
+      path: '/products?category=all',
       items: [
         { name: 'Processor', path: '/products?category=CPU', placeholder: 'processor' },
         { name: 'Motherboard', path: '/products?category=MOTHERBOARD', placeholder: 'motherboard' },
@@ -178,6 +191,7 @@ const Navbar = () => {
     peripherals: {
       name: 'Peripherals',
       icon: FiHeadphones,
+      path: '/peripherals',
       items: [
         { name: 'Speakers', path: '/peripherals?category=SPEAKER', placeholder: 'speaker' },
         { name: 'Webcam', path: '/peripherals?category=WEBCAM', placeholder: 'webcam' },
@@ -196,6 +210,7 @@ const Navbar = () => {
     accessories: {
       name: 'Accessories',
       icon: FiBox,
+      path: '/accessories',
       items: [
         { name: 'Thermal Paste', path: '/accessories?category=THERMAL_PASTE', placeholder: 'cables' },
         { name: 'Cable Management', path: '/accessories?category=CABLE_MANAGEMENT', placeholder: 'cables' },
@@ -206,6 +221,77 @@ const Navbar = () => {
         { name: 'UPS', path: '/accessories?category=UPS', placeholder: 'ups' },
       ]
     }
+  }
+
+  // Menu Item Component with Click + Hover
+  const MenuItem = ({ menuKey, menu }) => {
+    const Icon = menu.icon
+    const isActive = activeSubMenu === menuKey
+    const IconComponent = menu.icon
+
+    return (
+      <div
+        className="relative flex items-center justify-center"
+        onMouseEnter={() => handleSubMenuEnter(menuKey)}
+        onMouseLeave={handleSubMenuLeave}
+      >
+        <button
+          onClick={() => {
+            // Navigate to the main category page
+            navigate(menu.path)
+            setActiveSubMenu(null)
+          }}
+          className={`flex items-center gap-1.5 text-xs font-medium transition-colors cursor-pointer group ${
+            isActive || location.pathname === menu.path
+              ? 'text-slate-100'
+              : 'text-slate-400 hover:text-slate-100'
+          }`}
+        >
+          <IconComponent className="w-3.5 h-3.5" />
+          <span>{menu.name}</span>
+          <FiChevronDown 
+            className={`w-3 h-3 transition-transform duration-200 ${
+              isActive ? 'rotate-180' : ''
+            }`} 
+          />
+        </button>
+
+        <AnimatePresence>
+          {isActive && (
+            <motion.div
+              initial={{ opacity: 0, y: 5 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 5 }}
+              transition={{ duration: 0.15 }}
+              className="absolute top-full left-1/2 -translate-x-1/2 mt-1 bg-slate-950 rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.7)] p-3 z-50 border border-slate-800"
+              style={{
+                width: menuKey === 'components' ? '720px' : 
+                       menuKey === 'peripherals' ? '580px' : '380px'
+              }}
+            >
+              <div className={`grid gap-2 ${
+                menuKey === 'components' ? 'grid-cols-5' : 
+                menuKey === 'peripherals' ? 'grid-cols-4' : 'grid-cols-3'
+              }`}>
+                {menu.items.map((item) => (
+                  <button
+                    key={item.name}
+                    onClick={() => { 
+                      navigate(item.path); 
+                      setActiveSubMenu(null);
+                    }}
+                    className="flex flex-col items-center gap-1.5 p-3 text-sm text-slate-300 hover:text-white hover:bg-slate-800 transition-colors rounded-lg cursor-pointer"
+                  >
+                    <PlaceholderIcon category={item.placeholder} />
+                    <span className="text-[10px] text-center font-medium leading-tight">{item.name}</span>
+                  </button>
+                ))}
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
+    )
   }
 
   return (
@@ -346,7 +432,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Row 2 - Sub Navigation */}
+        {/* Row 2 - Sub Navigation with Click + Hover */}
         <div className="hidden lg:block border-t border-slate-800/50 bg-slate-950">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-center gap-8 h-10">
@@ -363,137 +449,20 @@ const Navbar = () => {
               
               <div className="h-4 w-px bg-slate-800" />
 
-              {/* PC Components */}
-              <div
-                className="relative flex items-center justify-center"
-                onMouseEnter={() => handleSubMenuEnter('components')}
-                onMouseLeave={handleSubMenuLeave}
-              >
-                <button className={`flex items-center gap-1.5 text-xs font-medium transition-colors cursor-pointer ${
-                  activeSubMenu === 'components'
-                    ? 'text-slate-100'
-                    : 'text-slate-400 hover:text-slate-100'
-                }`}>
-                  <FiGrid className="w-3.5 h-3.5" />
-                  <span>PC Components</span>
-                  <FiChevronDown className={`w-3 h-3 transition-transform duration-200 ${activeSubMenu === 'components' ? 'rotate-180' : ''}`} />
-                </button>
+              {/* PC Components - Clickable + Hover */}
+              <MenuItem menuKey="components" menu={subMenus.components} />
 
-                <AnimatePresence>
-                  {activeSubMenu === 'components' && (
-                    <motion.div
-                      initial={{ opacity: 0, y: 5 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: 5 }}
-                      transition={{ duration: 0.15 }}
-                      className="absolute top-full left-1/2 -translate-x-1/2 mt-1 w-[720px] bg-slate-950 rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.7)] p-3 z-50 border border-slate-800"
-                    >
-                      <div className="grid grid-cols-5 gap-2">
-                        {subMenus.components.items.map((item) => (
-                          <button
-                            key={item.name}
-                            onClick={() => { navigate(item.path); setActiveSubMenu(null); }}
-                            className="flex flex-col items-center gap-1.5 p-3 text-sm text-slate-300 hover:text-white hover:bg-slate-800 transition-colors rounded-lg cursor-pointer"
-                          >
-                            <PlaceholderIcon category={item.placeholder} />
-                            <span className="text-[10px] text-center font-medium leading-tight">{item.name}</span>
-                          </button>
-                        ))}
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </div>
+              {/* Peripherals - Clickable + Hover */}
+              <MenuItem menuKey="peripherals" menu={subMenus.peripherals} />
 
-              {/* Peripherals */}
-              <div
-                className="relative flex items-center justify-center"
-                onMouseEnter={() => handleSubMenuEnter('peripherals')}
-                onMouseLeave={handleSubMenuLeave}
-              >
-                <button className={`flex items-center gap-1.5 text-xs font-medium transition-colors cursor-pointer ${
-                  activeSubMenu === 'peripherals'
-                    ? 'text-slate-100'
-                    : 'text-slate-400 hover:text-slate-100'
-                }`}>
-                  <FiHeadphones className="w-3.5 h-3.5" />
-                  <span>Peripherals</span>
-                  <FiChevronDown className={`w-3 h-3 transition-transform duration-200 ${activeSubMenu === 'peripherals' ? 'rotate-180' : ''}`} />
-                </button>
-
-                <AnimatePresence>
-                  {activeSubMenu === 'peripherals' && (
-                    <motion.div
-                      initial={{ opacity: 0, y: 5 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: 5 }}
-                      transition={{ duration: 0.15 }}
-                      className="absolute top-full left-1/2 -translate-x-1/2 mt-1 w-[580px] bg-slate-950 rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.7)] p-3 z-50 border border-slate-800"
-                    >
-                      <div className="grid grid-cols-4 gap-2">
-                        {subMenus.peripherals.items.map((item) => (
-                          <button
-                            key={item.name}
-                            onClick={() => { navigate(item.path); setActiveSubMenu(null); }}
-                            className="flex flex-col items-center gap-1.5 p-3 text-sm text-slate-300 hover:text-white hover:bg-slate-800 transition-colors rounded-lg cursor-pointer"
-                          >
-                            <PlaceholderIcon category={item.placeholder} />
-                            <span className="text-[10px] text-center font-medium leading-tight">{item.name}</span>
-                          </button>
-                        ))}
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </div>
-
-              {/* PC Accessories */}
-              <div
-                className="relative flex items-center justify-center"
-                onMouseEnter={() => handleSubMenuEnter('accessories')}
-                onMouseLeave={handleSubMenuLeave}
-              >
-                <button className={`flex items-center gap-1.5 text-xs font-medium transition-colors cursor-pointer ${
-                  activeSubMenu === 'accessories'
-                    ? 'text-slate-100'
-                    : 'text-slate-400 hover:text-slate-100'
-                }`}>
-                  <FiBox className="w-3.5 h-3.5" />
-                  <span>Accessories</span>
-                  <FiChevronDown className={`w-3 h-3 transition-transform duration-200 ${activeSubMenu === 'accessories' ? 'rotate-180' : ''}`} />
-                </button>
-
-                <AnimatePresence>
-                  {activeSubMenu === 'accessories' && (
-                    <motion.div
-                      initial={{ opacity: 0, y: 5 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: 5 }}
-                      transition={{ duration: 0.15 }}
-                      className="absolute top-full left-1/2 -translate-x-1/2 mt-1 w-[380px] bg-slate-950 rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.7)] p-3 z-50 border border-slate-800"
-                    >
-                      <div className="grid grid-cols-3 gap-2">
-                        {subMenus.accessories.items.map((item) => (
-                          <button
-                            key={item.name}
-                            onClick={() => { navigate(item.path); setActiveSubMenu(null); }}
-                            className="flex flex-col items-center gap-1.5 p-3 text-sm text-slate-300 hover:text-white hover:bg-slate-800 transition-colors rounded-lg cursor-pointer"
-                          >
-                            <PlaceholderIcon category={item.placeholder} />
-                            <span className="text-[10px] text-center font-medium leading-tight">{item.name}</span>
-                          </button>
-                        ))}
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </div>
+              {/* Accessories - Clickable + Hover */}
+              <MenuItem menuKey="accessories" menu={subMenus.accessories} />
             </div>
           </div>
         </div>
       </nav>
 
-      {/* No spacer */}
+      {/* Spacer */}
       <div className="h-0" />
 
       {/* Search Overlay */}

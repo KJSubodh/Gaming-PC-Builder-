@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 import { useCart } from '../context/CartContext'
 import { useAuth } from '../context/AuthContext'
@@ -6,7 +6,8 @@ import { orderService } from '../services/orderService'
 import { motion } from 'framer-motion'
 import {
   FiArrowLeft, FiTruck, FiShield, FiClock, FiMapPin,
-  FiPhone, FiMail, FiUser, FiFileText, FiCheck, FiCreditCard
+  FiPhone, FiMail, FiUser, FiFileText, FiCheck, FiCreditCard,
+  FiLogIn, FiTrash2
 } from 'react-icons/fi'
 import toast from 'react-hot-toast'
 
@@ -15,27 +16,53 @@ const Checkout = () => {
   const { cartItems, getCartTotal, clearCart } = useCart()
   const { user, isAuthenticated } = useAuth()
   const [loading, setLoading] = useState(false)
+  const [isClearing, setIsClearing] = useState(false)
 
   const [formData, setFormData] = useState({
-    customerName: user?.name || '',
+    customerName: user?.name || user?.firstName || '',
     customerEmail: user?.email || '',
-    customerPhone: '',
+    customerPhone: user?.phone || '',
     shippingAddress: '',
     notes: ''
   })
+
+  useEffect(() => {
+    if (user) {
+      setFormData(prev => ({
+        ...prev,
+        customerName: user?.name || user?.firstName || prev.customerName,
+        customerEmail: user?.email || prev.customerEmail,
+        customerPhone: user?.phone || prev.customerPhone,
+      }))
+    }
+  }, [user])
 
   const total = getCartTotal()
   const tax = total * 0.18
   const shipping = total > 50000 ? 0 : 500
   const grandTotal = total + tax + shipping
 
-  if (cartItems.length === 0) {
-    navigate('/cart')
-    return null
-  }
-
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
+  }
+
+  // ✅ Clear cart handler with confirmation
+  const handleClearCart = async () => {
+    if (!window.confirm('Are you sure you want to clear all items from your cart?')) {
+      return
+    }
+
+    setIsClearing(true)
+    try {
+      await clearCart()
+      toast.success('Cart cleared')
+      // Cart is now empty — the empty-cart view will render automatically
+    } catch (error) {
+      console.error('Failed to clear cart:', error)
+      toast.error('Failed to clear cart')
+    } finally {
+      setIsClearing(false)
+    }
   }
 
   const handleSubmit = async (e) => {
@@ -61,7 +88,7 @@ const Checkout = () => {
         shippingAddress: formData.shippingAddress,
         notes: formData.notes,
         items: cartItems.map(item => ({
-          productId: item.product_id || item.id,
+          productId: item.product_id || item.productId || item.id,
           productName: item.name,
           quantity: item.quantity,
           price: item.price
@@ -75,8 +102,6 @@ const Checkout = () => {
       const response = await orderService.createOrder(orderData)
       toast.success('Order placed successfully!')
       clearCart()
-      
-      // Use the order number endpoint instead of ID
       navigate(`/orders/number/${response.orderNumber}`)
     } catch (error) {
       console.error('Order error:', error)
@@ -84,6 +109,27 @@ const Checkout = () => {
     } finally {
       setLoading(false)
     }
+  }
+
+  // Empty cart view
+  if (cartItems.length === 0) {
+    return (
+      <div className="min-h-screen bg-white flex items-center justify-center">
+        <div className="text-center max-w-md mx-auto px-4">
+          <div className="w-24 h-24 bg-neutral-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <FiCreditCard className="text-4xl text-neutral-400" />
+          </div>
+          <h2 className="text-2xl font-bold text-neutral-900 mb-2">Your cart is empty</h2>
+          <p className="text-neutral-500 mb-6">Add some items to proceed with checkout</p>
+          <Link
+            to="/products"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-neutral-900 text-white rounded-lg font-medium hover:bg-neutral-800 transition-colors"
+          >
+            Browse Products
+          </Link>
+        </div>
+      </div>
+    )
   }
 
   return (
@@ -102,9 +148,7 @@ const Checkout = () => {
             <FiCreditCard /> Secure Checkout
           </span>
           <h1 className="text-4xl md:text-5xl font-extrabold mb-3 tracking-tight">
-            <span className="bg-gradient-to-r from-purple-400 via-indigo-400 to-pink-400 bg-clip-text text-transparent">
-              Complete Your Order
-            </span>
+            Complete Your Order
           </h1>
           <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto font-light leading-relaxed">
             Review your items and fill in the details below
@@ -113,8 +157,22 @@ const Checkout = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        {/* Guest Notice */}
+        {!isAuthenticated && (
+          <div className="mb-6 p-4 bg-purple-50 border border-purple-200 rounded-lg flex items-start gap-3">
+            <FiLogIn className="text-purple-600 flex-shrink-0 mt-0.5" size={18} />
+            <div className="flex-1">
+              <p className="text-sm font-medium text-purple-900">
+                You're checking out as a guest
+              </p>
+              <p className="text-xs text-purple-700 mt-0.5">
+                <Link to="/login" className="underline font-medium">Login</Link> or <Link to="/register" className="underline font-medium">create an account</Link> to save your order history and track deliveries.
+              </p>
+            </div>
+          </div>
+        )}
 
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Checkout Form */}
           <div className="lg:col-span-2">
             <motion.form
@@ -228,7 +286,21 @@ const Checkout = () => {
               className="sticky top-20"
             >
               <div className="bg-gradient-to-br from-slate-50 to-white rounded-xl border border-neutral-200 p-6">
-                <h3 className="text-xl font-bold text-neutral-900 mb-4">Order Summary</h3>
+                <div className="flex items-center justify-between mb-4">
+                  <h3 className="text-xl font-bold text-neutral-900">Order Summary</h3>
+
+                  {/* ✅ Clear Cart button in the header */}
+                  <button
+                    type="button"
+                    onClick={handleClearCart}
+                    disabled={isClearing}
+                    className="text-xs text-red-500 hover:text-red-600 flex items-center gap-1 transition-colors disabled:opacity-50 cursor-pointer"
+                    title="Clear all items"
+                  >
+                    <FiTrash2 size={12} />
+                    {isClearing ? 'Clearing...' : 'Clear All'}
+                  </button>
+                </div>
 
                 <div className="space-y-3 max-h-80 overflow-y-auto mb-4 pr-2">
                   {cartItems.map((item, idx) => (
@@ -261,9 +333,7 @@ const Checkout = () => {
                   <div className="border-t border-neutral-200 pt-3 mt-3">
                     <div className="flex justify-between text-xl font-bold">
                       <span className="text-neutral-900">Total</span>
-                      <span className="bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
-                        ₹{grandTotal.toLocaleString()}
-                      </span>
+                      <span className="text-purple-600">₹{grandTotal.toLocaleString()}</span>
                     </div>
                   </div>
                 </div>
@@ -298,7 +368,7 @@ const Checkout = () => {
                   type="submit"
                   onClick={handleSubmit}
                   disabled={loading}
-                  className="w-full bg-neutral-900 text-white py-3 rounded-lg font-semibold hover:bg-neutral-800 transition-colors flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full bg-neutral-900 text-white py-3 rounded-lg font-semibold hover:bg-neutral-800 transition-colors flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
                 >
                   {loading ? (
                     <>
@@ -310,6 +380,17 @@ const Checkout = () => {
                       <FiCreditCard /> Place Order • ₹{grandTotal.toLocaleString()}
                     </>
                   )}
+                </button>
+
+                {/* ✅ Bottom Clear Cart button — visible and prominent */}
+                <button
+                  type="button"
+                  onClick={handleClearCart}
+                  disabled={isClearing}
+                  className="w-full mt-3 py-2.5 border border-red-200 text-red-500 hover:bg-red-50 hover:border-red-300 rounded-lg font-medium transition-colors flex items-center justify-center gap-2 text-sm disabled:opacity-50 cursor-pointer"
+                >
+                  <FiTrash2 size={14} />
+                  {isClearing ? 'Clearing Cart...' : 'Clear Cart'}
                 </button>
 
                 <Link
